@@ -4,146 +4,184 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import OrderFlow from "@/components/OrderFlow";
 import Image from "next/image";
-import { CheckCircle, Zap, Palette, Heart } from "lucide-react";
+import { Zap, Palette, Heart } from "lucide-react";
 import { useLanguage } from "@/lib/LanguageContext";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { Card, CardContent } from "@/components/ui/card";
+import Link from "next/link";
 
 export default function Home() {
   const { t } = useLanguage();
 
+  const features = [
+    {
+      icon: <Zap className="size-7 text-amber-600" />,
+      title: t.features.feature1.title,
+      desc: t.features.feature1.desc,
+    },
+    {
+      icon: <Palette className="size-7 text-primary" />,
+      title: t.features.feature2.title,
+      desc: t.features.feature2.desc,
+    },
+    {
+      icon: <Heart className="size-7 text-rose-600" />,
+      title: t.features.feature3.title,
+      desc: t.features.feature3.desc,
+    },
+  ];
+
   return (
-    <div className="min-h-screen flex flex-col bg-white">
+    <div className="flex min-h-screen flex-col bg-background">
       <Header />
-      
+
       <main className="flex-grow">
-        {/* Hero Section */}
-        <section className="relative py-32 overflow-hidden bg-gradient-to-b from-indigo-50 to-white">
-          {/* Background Gallery */}
-          <div className="absolute inset-0 z-0 flex items-center overflow-hidden opacity-50 hover:opacity-100 transition-opacity duration-700">
-            <div className="animate-marquee flex gap-8 py-10">
-              {/* Double the set for seamless loop */}
+        <section
+          id="gallery"
+          className="relative overflow-hidden bg-gradient-to-b from-muted/80 via-background to-background py-24 md:py-32"
+        >
+          <div className="absolute inset-0 z-0 flex items-center overflow-hidden opacity-40 transition-opacity duration-700 hover:opacity-70">
+            <div className="animate-marquee flex gap-6 py-10 md:gap-8">
               {[...Array(2)].map((_, groupIndex) => (
-                <div key={groupIndex} className="flex gap-8">
-                  {['/pic1.jpg', '/pic2.jpg', '/pic3.jpg', '/pic4.jpg'].map((src, i) => (
-                    <div key={`${groupIndex}-${i}`} className="relative w-[300px] h-[450px] rounded-3xl overflow-hidden shadow-2xl flex-shrink-0 transform rotate-2">
-                      <Image 
-                        src={src} 
-                        alt={`Art example ${i + 1}`} 
-                        fill 
-                        sizes="300px"
-                        className="object-cover"
-                        priority={groupIndex === 0 && i === 0}
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
-                    </div>
-                  ))}
+                <div key={groupIndex} className="flex gap-6 md:gap-8">
+                  {["/pic1.jpg", "/pic2.jpg", "/pic3.jpg", "/pic4.jpg"].map(
+                    (src, i) => (
+                      <div
+                        key={`${groupIndex}-${i}`}
+                        className="relative h-[380px] w-[260px] flex-shrink-0 rotate-1 overflow-hidden rounded-2xl border border-border/50 shadow-xl md:h-[420px] md:w-[280px]"
+                      >
+                        <Image
+                          src={src}
+                          alt={`Art example ${i + 1}`}
+                          fill
+                          sizes="280px"
+                          className="object-cover"
+                          priority={groupIndex === 0 && i === 0}
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-foreground/25 to-transparent" />
+                      </div>
+                    )
+                  )}
                 </div>
               ))}
             </div>
           </div>
 
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pointer-events-none">
-            <div className="text-center max-w-4xl mx-auto pointer-events-auto">
-              <h1 className="text-6xl md:text-8xl font-black tracking-tighter text-gray-900 mb-8 leading-[1]">
-                {t.hero.title1} <br />
-                <span className="text-indigo-600 drop-shadow-sm">{t.hero.title2}</span>
+          <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
+            <div className="animate-blob absolute -left-20 top-1/4 size-72 rounded-full bg-primary/15 blur-3xl" />
+            <div className="animation-delay-2000 animate-blob absolute -right-20 top-1/3 size-72 rounded-full bg-amber-200/40 blur-3xl" />
+            <div className="animation-delay-4000 animate-blob absolute -bottom-20 left-1/3 size-72 rounded-full bg-rose-200/30 blur-3xl" />
+          </div>
+
+          <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="pointer-events-auto mx-auto max-w-3xl text-center">
+              <Badge variant="secondary" className="mb-6 px-3 py-1">
+                ArtCanvas.gr · Greece
+              </Badge>
+              <h1 className="mb-6 text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl md:leading-[1.08]">
+                {t.hero.title1}{" "}
+                <span className="text-primary">{t.hero.title2}</span>
               </h1>
-              <p className="text-2xl text-gray-700 mb-12 leading-relaxed max-w-2xl mx-auto font-medium">
+              <p className="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-muted-foreground md:text-xl">
                 {t.hero.description}
               </p>
-              <div className="flex flex-col sm:flex-row justify-center gap-6">
-                <a 
-                  href="#order-now" 
-                  className="bg-indigo-600 text-white px-12 py-5 rounded-full font-bold text-xl shadow-2xl hover:bg-indigo-700 transition-all hover:scale-105 active:scale-95"
+              <div className="flex flex-col justify-center gap-4 sm:flex-row">
+                <Button
+                  size="lg"
+                  className="h-12 rounded-full px-8 text-base"
+                  render={<Link href="#order-now" />}
                 >
                   {t.hero.ctaPrimary}
-                </a>
-                <a 
-                  href="#how-it-works" 
-                  className="bg-white/80 backdrop-blur-sm text-gray-900 border-2 border-gray-200 px-12 py-5 rounded-full font-bold text-xl hover:border-indigo-600 hover:text-indigo-600 transition-all shadow-lg"
+                </Button>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="h-12 rounded-full border-border bg-background/80 px-8 text-base backdrop-blur-sm"
+                  render={<Link href="#how-it-works" />}
                 >
                   {t.hero.ctaSecondary}
-                </a>
+                </Button>
               </div>
             </div>
           </div>
-
-          
-          {/* Decorative elements */}
-          <div className="absolute top-0 left-0 w-full h-full pointer-events-none overflow-hidden -z-10">
-            <div className="absolute top-1/4 -left-20 w-80 h-80 bg-pink-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
-            <div className="absolute top-1/3 -right-20 w-80 h-80 bg-indigo-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
-            <div className="absolute -bottom-20 left-1/3 w-80 h-80 bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-4000"></div>
-          </div>
         </section>
 
-        {/* Features Section */}
-        <section id="how-it-works" className="py-24 bg-white">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-5xl font-bold mb-4 italic">{t.features.sectionTitle}</h2>
-              <p className="text-gray-500">{t.features.sectionDesc}</p>
+        <section id="how-it-works" className="py-20 md:py-28">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto mb-14 max-w-2xl text-center">
+              <h2 className="mb-3 text-3xl font-bold tracking-tight md:text-4xl">
+                {t.features.sectionTitle}
+              </h2>
+              <p className="text-muted-foreground">{t.features.sectionDesc}</p>
             </div>
-            
-            <div className="grid md:grid-cols-3 gap-12 max-w-5xl mx-auto">
-              {[
-                { icon: <Zap className="w-8 h-8 text-yellow-500" />, title: t.features.feature1.title, desc: t.features.feature1.desc },
-                { icon: <Palette className="w-8 h-8 text-indigo-500" />, title: t.features.feature2.title, desc: t.features.feature2.desc },
-                { icon: <Heart className="w-8 h-8 text-red-500" />, title: t.features.feature3.title, desc: t.features.feature3.desc }
-              ].map((item, i) => (
-                <div key={i} className="flex flex-col items-center text-center p-6 rounded-2xl bg-gray-50 border border-gray-100 transition-hover hover:shadow-lg">
-                  <div className="mb-6 p-4 bg-white rounded-full shadow-sm">{item.icon}</div>
-                  <h3 className="text-xl font-bold mb-3 italic underline">{item.title}</h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
-                </div>
+
+            <div className="mx-auto grid max-w-5xl gap-6 md:grid-cols-3 md:gap-8">
+              {features.map((item, i) => (
+                <Card
+                  key={i}
+                  className="border-border/80 bg-card shadow-sm transition-shadow hover:shadow-md"
+                >
+                  <CardContent className="flex flex-col items-center pt-8 text-center">
+                    <div className="mb-5 flex size-14 items-center justify-center rounded-2xl bg-muted">
+                      {item.icon}
+                    </div>
+                    <h3 className="mb-2 text-lg font-semibold">{item.title}</h3>
+                    <p className="text-sm leading-relaxed text-muted-foreground">
+                      {item.desc}
+                    </p>
+                  </CardContent>
+                </Card>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Pricing Section with Sofa */}
-        <section id="pricing" className="py-24 bg-white overflow-hidden">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-4xl md:text-5xl font-bold mb-16 italic">{t.nav.pricing}</h2>
-            
-            <div className="relative max-w-5xl mx-auto rounded-3xl overflow-hidden shadow-2xl">
-              {/* Sofa Background */}
-              <div className="relative w-full aspect-[3/4] sm:aspect-[4/3] md:aspect-[16/10]">
-                <Image 
-                  src="/divan.png" 
-                  alt="Living room setup" 
-                  fill 
+        <section id="pricing" className="bg-muted/40 py-20 md:py-28">
+          <div className="container mx-auto px-4 text-center sm:px-6 lg:px-8">
+            <h2 className="mb-12 text-3xl font-bold tracking-tight md:text-4xl">
+              {t.nav.pricing}
+            </h2>
+
+            <div className="relative mx-auto max-w-5xl overflow-hidden rounded-3xl border border-border shadow-xl">
+              <div className="relative aspect-[3/4] w-full sm:aspect-[4/3] md:aspect-[16/10]">
+                <Image
+                  src="/divan.png"
+                  alt="Living room setup"
+                  fill
                   className="object-cover"
                 />
-                
-                {/* Portraits on the wall */}
-                <div className="absolute top-[5%] left-0 w-full h-[55%] flex items-end justify-center gap-4 md:gap-12 px-4">
+
+                <div className="absolute left-0 top-[5%] flex h-[55%] w-full items-end justify-center gap-3 px-4 md:gap-10">
                   {[
-                    { size: '45x30', price: '45', scale: 0.5 },
-                    { size: '60x40', price: '55', scale: 0.67 },
-                    { size: '80x54', price: '68', scale: 0.89 },
-                    { size: '90x60', price: '75', scale: 1.0 },
+                    { size: "45x30", price: "45", scale: 0.5 },
+                    { size: "60x40", price: "55", scale: 0.67 },
+                    { size: "80x54", price: "68", scale: 0.89 },
+                    { size: "90x60", price: "75", scale: 1.0 },
                   ].map((p, i) => (
-                    <div 
-                      key={p.size} 
-                      className="flex flex-col items-center group transition-all hover:-translate-y-2"
-                      style={{ 
+                    <div
+                      key={p.size}
+                      className="group flex flex-col items-center transition-transform hover:-translate-y-1"
+                      style={{
                         width: `${p.scale * 20}%`,
-                        minWidth: '60px'
+                        minWidth: "56px",
                       }}
                     >
-                      <div 
-                        className="relative w-full aspect-[2/3] bg-gray-200 border-[3px] md:border-[6px] border-white shadow-2xl rounded-sm overflow-hidden mb-2"
-                      >
-                        <Image 
+                      <div className="relative mb-2 aspect-[2/3] w-full overflow-hidden rounded-sm border-4 border-white shadow-lg">
+                        <Image
                           src={`/pic${i + 1}${i + 1}.JPG`}
                           alt={p.size}
                           fill
                           className="object-cover"
                         />
                       </div>
-                      <div className="bg-white/95 backdrop-blur-sm px-2 py-1 rounded-md shadow-lg border border-gray-100">
-                        <p className="text-[8px] md:text-xs font-bold text-gray-900 whitespace-nowrap">{p.size} cm</p>
-                        <p className="text-[8px] md:text-xs font-black text-indigo-600">€{p.price}</p>
+                      <div className="rounded-lg border border-border/50 bg-card/95 px-2 py-1 shadow-md backdrop-blur-sm">
+                        <p className="whitespace-nowrap text-[10px] font-medium text-foreground md:text-xs">
+                          {p.size} cm
+                        </p>
+                        <p className="text-[10px] font-bold text-primary md:text-xs">
+                          €{p.price}
+                        </p>
                       </div>
                     </div>
                   ))}
@@ -153,21 +191,20 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Order Flow Section */}
-        <section className="py-24 bg-gray-50">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-5xl font-bold mb-4">{t.order.sectionTitle}</h2>
-              <p className="text-gray-500 italic">{t.order.sectionDesc}</p>
+        <section className="py-20 md:py-28">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto mb-10 max-w-2xl text-center">
+              <h2 className="mb-3 text-3xl font-bold tracking-tight md:text-4xl">
+                {t.order.sectionTitle}
+              </h2>
+              <p className="text-muted-foreground">{t.order.sectionDesc}</p>
             </div>
             <OrderFlow />
           </div>
         </section>
-
       </main>
 
       <Footer />
     </div>
   );
 }
-
