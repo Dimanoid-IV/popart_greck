@@ -28,12 +28,12 @@ export function buildRootJsonLd() {
         image: `${SITE_ORIGIN}/og-image.jpg`,
         address: {
           "@type": "PostalAddress",
-          addressLocality: "Tallinn",
-          addressCountry: "EE",
+          addressLocality: "Athens",
+          addressCountry: "GR",
         },
         areaServed: {
           "@type": "Country",
-          name: "Estonia",
+          name: "Greece",
         },
         priceRange: "€€",
       },
@@ -43,7 +43,7 @@ export function buildRootJsonLd() {
         name: SITE_NAME,
         url: SITE_ORIGIN,
         publisher: { "@id": `${SITE_ORIGIN}#organization` },
-        inLanguage: ["en-US", "et-EE", "ru-RU"],
+        inLanguage: ["el-GR", "en-GR"],
       },
     ],
   };

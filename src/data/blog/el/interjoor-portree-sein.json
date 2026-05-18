@@ -1,0 +1,33 @@
+{
+  "slug": "interjoor-portree-sein",
+  "category": "interior",
+  "title": "Πορτραίτο στον τοίχο: σαλόνι και υπνοδωμάτιο",
+  "description": "Τοποθέτηση πορτραίτου στο εσωτερικό — συμβουλές για Ελλάδα.",
+  "publishedAt": "2026-02-15",
+  "author": {
+    "name": "ArtCanvas.gr",
+    "url": "https://www.artcanvas.gr"
+  },
+  "coverImage": "/pic11.JPG",
+  "keywords": [
+    "εσωτερικό",
+    "πορτραίτο",
+    "τοίχος"
+  ],
+  "bodyHtml": "<p>Στο σαλόνι, το πορτραίτο γίνεται focal point. Αποφύγετε άμεσο ηλιακό φως — προστατέψτε τον καμβά.</p><p>Ξεκινήστε στο <a href='https://www.artcanvas.gr'>ArtCanvas.gr</a> και επιβεβαιώστε την προεπισκόπηση πριν την εκτύπωση. Δείτε επίσης <a href='/el/blog/seinapilt-tellimine'>seinapilt-tellimine</a>.</p>",
+  "relatedSlugs": [
+    "custom-art-portrait-greece"
+  ],
+  "internalLinks": [
+    {
+      "href": "/el/blog/seinapilt-tellimine",
+      "label": "Παραγγελία τοιχογραφίας"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Ζευγάρι πορτραίτων;",
+      "answer": "Ναι — συμμετρική διάταξη."
+    }
+  ]
+}

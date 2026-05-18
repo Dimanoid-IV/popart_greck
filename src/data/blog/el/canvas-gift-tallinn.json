@@ -1,0 +1,33 @@
+{
+  "slug": "canvas-gift-athens",
+  "category": "gifts",
+  "title": "Δώρο καμβά στην Αθήνα και στην Ελλάδα",
+  "description": "Ιδέες δώρου με εκτύπωση σε καμβά — Αθήνα, αποστολή πανελλαδικά.",
+  "publishedAt": "2026-02-18",
+  "author": {
+    "name": "ArtCanvas.gr",
+    "url": "https://www.artcanvas.gr"
+  },
+  "coverImage": "/pic1.jpg",
+  "keywords": [
+    "δώρο καμβά",
+    "Αθήνα",
+    "Ελλάδα"
+  ],
+  "bodyHtml": "<p>Ο καμβάς είναι κλασικό δώρο για σπίτι στην Αθήνα και σε όλη την Ελλάδα. Επιλέξτε φωτογραφία, δείτε προεπισκόπηση, παραγγείλετε εγκαίρως.</p><p>Ξεκινήστε στο <a href='https://www.artcanvas.gr'>ArtCanvas.gr</a> και επιβεβαιώστε την προεπισκόπηση πριν την εκτύπωση.</p>",
+  "relatedSlugs": [
+    "custom-art-portrait-greece"
+  ],
+  "internalLinks": [
+    {
+      "href": "/el/blog/tellimus-tallinnas-tarne",
+      "label": "Αποστολή"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Χριστούγεννα;",
+      "answer": "Παραγγείλετε νωρίς στη σεζόν."
+    }
+  ]
+}

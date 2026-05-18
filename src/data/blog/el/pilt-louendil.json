@@ -1,0 +1,41 @@
+{
+  "slug": "pilt-louendil",
+  "category": "interior",
+  "title": "Εκτύπωση σε καμβά: ποιότητα που φαίνεται",
+  "description": "Ποιότητα καμβά για πορτραίτα — παραγγελία στην Ελλάδα.",
+  "publishedAt": "2026-04-08",
+  "author": {
+    "name": "ArtCanvas.gr",
+    "url": "https://www.artcanvas.gr",
+    "jobTitle": "Art services"
+  },
+  "coverImage": "/pic22.JPG",
+  "keywords": [
+    "καμβάς",
+    "εκτύπωση",
+    "πορτραίτο",
+    "Ελλάδα"
+  ],
+  "bodyHtml": "<p>Ο καμβάς αναδεικνύει το πορτραίτο στον τοίχο. Επιλέξτε μέγεθος ανάλογα με δωμάτιο και επιβεβαιώστε χρώματα στην προεπισκόπηση πριν την εκτύπωση.</p><p>Ξεκινήστε στο <a href='https://www.artcanvas.gr'>ArtCanvas.gr</a> και επιβεβαιώστε την προεπισκόπηση πριν την εκτύπωση.</p>",
+  "faqs": [
+    {
+      "question": "Premium καμβάς;",
+      "answer": "Ναι — μουσειακής ποιότητας."
+    },
+    {
+      "question": "Αποστολή;",
+      "answer": "Σε όλη την Ελλάδα."
+    }
+  ],
+  "relatedSlugs": [
+    "seinapilt-tellimine",
+    "kunstiline-portree",
+    "portree-fotost-athens"
+  ],
+  "internalLinks": [
+    {
+      "href": "/el/blog/seinapilt-tellimine",
+      "label": "Τοιχογραφία"
+    }
+  ]
+}

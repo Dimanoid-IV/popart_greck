@@ -1,0 +1,36 @@
+{
+  "slug": "seinapilt-tellimine",
+  "category": "interior",
+  "title": "Παραγγελία τοιχογραφίας: μέγεθος και θέση",
+  "description": "Οδηγός παραγγελίας τοιχογραφίας-πορτραίτου στην Ελλάδα.",
+  "publishedAt": "2026-04-06",
+  "author": {
+    "name": "ArtCanvas.gr",
+    "url": "https://www.artcanvas.gr",
+    "jobTitle": "Art services"
+  },
+  "coverImage": "/pic4.jpg",
+  "keywords": [
+    "τοιχογραφία",
+    "πορτραίτο",
+    "Ελλάδα"
+  ],
+  "bodyHtml": "<p>Μετρήστε τον τοίχο, σκεφτείτε ύψος ματιών και φωτισμό. Πορτραίτο σε καμβά με προεπισκόπηση βοηθά να αποφύγετε λάθος μέγεθος.</p><p>Δείτε <a href='/el/blog/interjoor-portree-sein'>πορτραίτο στον τοίχο</a>.</p><p>Ξεκινήστε στο <a href='https://www.artcanvas.gr'>ArtCanvas.gr</a> και επιβεβαιώστε την προεπισκόπηση πριν την εκτύπωση.</p>",
+  "faqs": [
+    {
+      "question": "Πάνω από καναπέ;",
+      "answer": "Συνήθως 60–80% του πλάτους του επίπλου."
+    }
+  ],
+  "relatedSlugs": [
+    "pilt-louendil",
+    "portree-fotost-athens",
+    "pulmakingitus-idee"
+  ],
+  "internalLinks": [
+    {
+      "href": "/el/blog/interjoor-portree-sein",
+      "label": "Εσωτερικό"
+    }
+  ]
+}

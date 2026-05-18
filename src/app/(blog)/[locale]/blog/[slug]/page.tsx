@@ -13,6 +13,11 @@ import {
   isValidBlogLocale,
 } from "@/lib/blog";
 import { getBlogUiLabels } from "@/lib/blog/ui-labels";
+import {
+  blogOpenGraphLocale,
+  blogSiteName,
+  defaultBlogLocale,
+} from "@/lib/blog/locale-meta";
 import ArticleTemplate from "@/components/blog/ArticleTemplate";
 
 export async function generateStaticParams() {
@@ -40,10 +45,10 @@ export async function generateMetadata({
     const sibling = getArticle(l, slug);
     if (sibling) alternatesLang[l] = blogArticleUrl(l, slug);
   }
-  alternatesLang["x-default"] = blogArticleUrl("et", slug);
+  alternatesLang["x-default"] = blogArticleUrl(defaultBlogLocale(), slug);
 
   return {
-    title: `${article.title} | PopArt.ee`,
+    title: `${article.title} | ${blogSiteName}`,
     description: article.description,
     keywords: article.keywords,
     alternates: {
@@ -55,13 +60,8 @@ export async function generateMetadata({
       url: canonical,
       title: article.title,
       description: article.description,
-      siteName: "PopArt.ee",
-      locale:
-        article.locale === "et"
-          ? "et_EE"
-          : article.locale === "ru"
-            ? "ru_RU"
-            : "en_US",
+      siteName: blogSiteName,
+      locale: blogOpenGraphLocale(article.locale),
       publishedTime: article.publishedAt,
       modifiedTime: article.updatedAt ?? article.publishedAt,
       images: [{ url: image, width: 1200, height: 630, alt: article.title }],
@@ -93,7 +93,7 @@ export default async function BlogArticlePage({
     .filter((a): a is BlogArticle => a !== null);
 
   const breadcrumbItems = [
-    { label: "PopArt.ee", href: "/" },
+    { label: blogSiteName, href: "/" },
     { label: labels.breadcrumbBlog, href: blogIndexPath(locale) },
     ...(article.category
       ? [

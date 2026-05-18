@@ -18,71 +18,44 @@ export type BlogCroLabels = {
 };
 
 const CRO: Record<BlogLocale, BlogCroLabels> = {
-  et: {
+  el: {
     trustStrip: [
-      "Turvaline makse",
-      "Eelvaade enne trükki",
-      "Tellimus üle Eesti",
-      "Tugi eesti keeles",
+      "Ασφαλής πληρωμή",
+      "Προεπισκόπηση πριν την εκτύπωση",
+      "Παραγγελίες σε όλη την Ελλάδα",
+      "Υποστήριξη στα ελληνικά",
     ],
     emotionalAboveFold:
-      "Kingitus või kodu kaunistus — sama tellimusvoog, mis aitab valida õige suuruse ja stiili.",
+      "Δώρο ή διακόσμηση για το σπίτι — η ίδια απλή ροή για να επιλέξετε μέγεθος και στυλ με σιγουριά.",
     localProof:
-      "Teenust tellitakse Eestist ja Tallinnast: selged sammud, tarneinfo tellimuses ja abi vormi kaudu.",
-    ctaMidTitle: "Valmis oma fotost portree tellima?",
+      "Για πελάτες στην Ελλάδα και την Αθήνα: σαφή βήματα, λεπτομέρειες αποστολής στην επιβεβαίωση και βοήθεια μέσω της ιστοσελίδας.",
+    ctaMidTitle: "Έτοιμοι να παραγγείλετε πορτραίτο από φωτογραφία;",
     ctaMidBody:
-      "Laadige üles foto, valige lõuendi suurus ja vaadake tulemust enne lõplikku kinnitust — nii on otsus kindel.",
-    ctaMidButton: "Alusta tellimust",
+      "Ανεβάστε τη φωτογραφία, επιλέξτε μέγεθος καμβά και δείτε το αποτέλεσμα πριν την οριστική επιβεβαίωση.",
+    ctaMidButton: "Ξεκινήστε την παραγγελία",
     urgencyLine:
-      "Populaarsed mõõdud võivad hooajal kiiremini täituda — alustades täna jääte järjekorras eespoole.",
-    ctaBottomTitle: "Teeme selle lihtsaks",
+      "Τα δημοφιλή μεγέθη γεμίζουν πιο γρήγορα σε αιχμές — όσο νωρίτερα ξεκινήσετε, τόσο πιο ήρεμα τα χρονοδιαγράμματα.",
+    ctaBottomTitle: "Το κρατάμε απλό",
     ctaBottomBody:
-      "Kui artikkel vastas teie küsimustele, on järgmine samm tellimus: kõik toimub veebis, ilma poetiiruta.",
-    ctaBottomPrimary: "Mine tellimuse juurde",
-    ctaBottomSecondary: "Avaleht ja hinnad",
-    listBannerTitle: "Soovite oma portreed juba täna alustada?",
+      "Αν το άρθρο απάντησε στις ερωτήσεις σας, το επόμενο βήμα είναι η παραγγελία — όλα online, χωρίς επίσκεψη στο στούντιο.",
+    ctaBottomPrimary: "Μετάβαση στην παραγγελία",
+    ctaBottomSecondary: "Αρχική και τιμές",
+    listBannerTitle: "Θέλετε να ξεκινήσετε το πορτραίτο σας σήμερα;",
     listBannerBody:
-      "Tellimus avaneb avalehel: üleslaadimine, suurus ja makse — Tallinn ja üle Eesti.",
-    listBannerButton: "Alusta tellimust",
-  },
-  ru: {
-    trustStrip: [
-      "Безопасная оплата",
-      "Предпросмотр перед печатью",
-      "Заказ по всей Эстонии",
-      "Поддержка на русском",
-    ],
-    emotionalAboveFold:
-      "Подарок или декор для дома — один понятный процесс выбора размера и стиля.",
-    localProof:
-      "Заказы из Эстонии и Таллина: понятные шаги, доставка в подтверждении заказа и помощь через форму.",
-    ctaMidTitle: "Готовы заказать портрет по фото?",
-    ctaMidBody:
-      "Загрузите фото, выберите размер холста и посмотрите результат перед финальным подтверждением.",
-    ctaMidButton: "Начать заказ",
-    urgencyLine:
-      "В сезон популярные размеры могут быстрее заниматься — чем раньше начнёте, тем спокойнее сроки.",
-    ctaBottomTitle: "Мы упростили процесс",
-    ctaBottomBody:
-      "Если статья закрыла вопросы, следующий шаг — оформление: всё онлайн, без лишних поездок.",
-    ctaBottomPrimary: "Перейти к заказу",
-    ctaBottomSecondary: "Главная и цены",
-    listBannerTitle: "Хотите начать портрет уже сегодня?",
-    listBannerBody:
-      "Оформление на главной странице: загрузка, размер и оплата — Таллин и вся Эстония.",
-    listBannerButton: "Начать заказ",
+      "Η παραγγελία ξεκινά στην αρχική σελίδα: ανέβασμα, μέγεθος και πληρωμή — Αθήνα και όλη η Ελλάδα.",
+    listBannerButton: "Ξεκινήστε την παραγγελία",
   },
   en: {
     trustStrip: [
       "Secure checkout",
       "Preview before printing",
-      "Orders across Estonia",
+      "Orders across Greece",
       "Support in English",
     ],
     emotionalAboveFold:
       "A gift or a statement piece for your home—same guided flow to pick size and style with confidence.",
     localProof:
-      "Built for Estonia and Tallinn customers: clear steps, delivery details in your order confirmation, and help via the site flow.",
+      "Built for Greece and Athens customers: clear steps, delivery details in your order confirmation, and help via the site flow.",
     ctaMidTitle: "Ready to order your portrait from a photo?",
     ctaMidBody:
       "Upload your photo, pick a canvas size, and review the result before you finalize—so you commit with confidence.",
@@ -96,7 +69,7 @@ const CRO: Record<BlogLocale, BlogCroLabels> = {
     ctaBottomSecondary: "Home & pricing",
     listBannerTitle: "Want to start your portrait today?",
     listBannerBody:
-      "The order flow lives on the homepage: upload, size, and checkout—Tallinn and all of Estonia.",
+      "The order flow lives on the homepage: upload, size, and checkout—Athens and all of Greece.",
     listBannerButton: "Start your order",
   },
 };

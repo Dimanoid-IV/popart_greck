@@ -1,0 +1,37 @@
+{
+  "slug": "joulukingitus-naisele",
+  "category": "gifts",
+  "title": "Χριστουγεννιάτικο δώρο για εκείνη",
+  "description": "Ιδέες χριστουγεννιάτικου δώρου με πορτραίτο — Αθήνα και όλη η Ελλάδα.",
+  "publishedAt": "2026-10-03",
+  "author": {
+    "name": "ArtCanvas.gr",
+    "url": "https://www.artcanvas.gr",
+    "jobTitle": "Art services"
+  },
+  "coverImage": "/pic33.JPG",
+  "keywords": [
+    "χριστουγεννιάτικο δώρο",
+    "πορτραίτο",
+    "Ελλάδα"
+  ],
+  "bodyHtml": "<p>Τα Χριστούγεννα απαιτούν νωρίτερα παραγγελία. Πορτραίτο σε καμβά με προεπισκόπηση είναι ασφαλής επιλογή δώρου — παραγγείλετε εγκαίρως για αποστολή στην Ελλάδα.</p><p>Ξεκινήστε στο <a href='https://www.artcanvas.gr'>ArtCanvas.gr</a> και επιβεβαιώστε την προεπισκόπηση πριν την εκτύπωση.</p>",
+  "faqs": [
+    {
+      "question": "Πότε να παραγγείλω;",
+      "answer": "Νωρίς στη σεζόν για ήρεμους χρόνους."
+    }
+  ],
+  "relatedSlugs": [
+    "joulukingitus-2026",
+    "joulukingitus-mehele",
+    "emadepaeva-kingitus",
+    "personaalne-kingitus"
+  ],
+  "internalLinks": [
+    {
+      "href": "/el/blog/joulukingitus-2026",
+      "label": "Οδηγός εορτών 2026"
+    }
+  ]
+}

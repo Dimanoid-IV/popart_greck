@@ -1,0 +1,45 @@
+{
+  "slug": "custom-portrait-greece",
+  "category": "portrait-guide",
+  "title": "Προσωποποιημένο πορτραίτο στην Ελλάδα",
+  "description": "Προσωποποιημένο πορτραίτο — προεπισκόπηση, αποστολή σε όλη την Ελλάδα.",
+  "publishedAt": "2026-04-05",
+  "author": {
+    "name": "ArtCanvas.gr",
+    "url": "https://www.artcanvas.gr",
+    "jobTitle": "Art services"
+  },
+  "coverImage": "/pic2.jpg",
+  "keywords": [
+    "προσωποποιημένο πορτραίτο",
+    "Ελλάδα",
+    "Αθήνα",
+    "προεπισκόπηση"
+  ],
+  "bodyHtml": "<p>Ένα προσωποποιημένο πορτραίτο στην Ελλάδα σημαίνει σαφή διαδικασία: ευκρινής φωτογραφία, προεπισκόπηση πριν την εκτύπωση, αξιόπιστη αποστολή. Δείτε <a href='/el/blog/kunstiline-portree'>καλλιτεχνικό πορτραίτο</a>, <a href='/el/blog/portree-fotost-tallinn'>πορτραίτο Αθήνα</a> και <a href='/el/blog/seinapilt-tellimine'>τοιχογραφία</a>.</p><p>Ξεκινήστε στο <a href='https://www.artcanvas.gr'>ArtCanvas.gr</a> και επιβεβαιώστε την προεπισκόπηση πριν την εκτύπωση.</p>",
+  "faqs": [
+    {
+      "question": "Στα αγγλικά;",
+      "answer": "Ναι — η ροή υποστηρίζει αγγλικά."
+    },
+    {
+      "question": "Αποστολή;",
+      "answer": "Σε όλη την Ελλάδα."
+    },
+    {
+      "question": "Προεπισκόπηση;",
+      "answer": "Ναι — συνιστάται."
+    }
+  ],
+  "relatedSlugs": [
+    "kunstiline-portree",
+    "portree-fotost-athens",
+    "seinapilt-tellimine"
+  ],
+  "internalLinks": [
+    {
+      "href": "/el/blog/kunstiline-portree",
+      "label": "Καλλιτεχνικό πορτραίτο"
+    }
+  ]
+}

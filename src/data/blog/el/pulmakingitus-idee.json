@@ -1,0 +1,36 @@
+{
+  "slug": "pulmakingitus-idee",
+  "category": "gifts",
+  "title": "Δώρο γάμου: πορτραίτο για το ζευγάρι",
+  "description": "Ιδέες δώρου γάμου με πορτραίτο στην Ελλάδα.",
+  "publishedAt": "2026-04-09",
+  "author": {
+    "name": "ArtCanvas.gr",
+    "url": "https://www.artcanvas.gr",
+    "jobTitle": "Art services"
+  },
+  "coverImage": "/pic33.JPG",
+  "keywords": [
+    "δώρο γάμου",
+    "πορτραίτο",
+    "Ελλάδα"
+  ],
+  "bodyHtml": "<p>Ένα πορτραίτο από φωτογραφία αρραβώνων ή γάμου είναι προσωπικό δώρο που μένει στο σπίτι.</p><p>Ξεκινήστε στο <a href='https://www.artcanvas.gr'>ArtCanvas.gr</a> και επιβεβαιώστε την προεπισκόπηση πριν την εκτύπωση.</p>",
+  "faqs": [
+    {
+      "question": "Μετά τον γάμο;",
+      "answer": "Ναι — με φωτογραφία από την ημέρα."
+    }
+  ],
+  "relatedSlugs": [
+    "personaalne-kingitus",
+    "kingitus-synnipaevaks",
+    "kunstiline-portree"
+  ],
+  "internalLinks": [
+    {
+      "href": "/el/blog/sonbrapaeva-kingitus-paarile",
+      "label": "Δώρο για ζευγάρι"
+    }
+  ]
+}

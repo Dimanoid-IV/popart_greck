@@ -1,0 +1,38 @@
+{
+  "slug": "digitaalne-kunstiline-portree",
+  "category": "dream-art",
+  "title": "Ψηφιακό καλλιτεχνικό πορτραίτο",
+  "description": "Ψηφιακή ζωγραφική από φωτογραφία — παραγγελία στην Ελλάδα.",
+  "publishedAt": "2026-05-06",
+  "author": {
+    "name": "ArtCanvas.gr",
+    "url": "https://www.artcanvas.gr",
+    "jobTitle": "Art services"
+  },
+  "coverImage": "/pic22.JPG",
+  "keywords": [
+    "ψηφιακό πορτραίτο",
+    "ζωγραφική",
+    "Ελλάδα"
+  ],
+  "bodyHtml": "<p>Η ψηφιακή ζωγραφική διατηρεί λεπτομέρειες και προσθέτει καλλιτεχνικό φόνο. Ιδανικό για δώρο ή διακόσμηση — με προεπισκόπηση πριν την εκτύπωση.</p><p>Ξεκινήστε στο <a href='https://www.artcanvas.gr'>ArtCanvas.gr</a> και επιβεβαιώστε την προεπισκόπηση πριν την εκτύπωση. Δείτε επίσης <a href='/el/blog/kunstiline-portree'>kunstiline-portree</a>.</p>",
+  "faqs": [
+    {
+      "question": "Αρχείο ψηφιακά;",
+      "answer": "Συνήθως μετά την παραγγελία — επιβεβαιώστε."
+    }
+  ],
+  "relatedSlugs": [
+    "dream-art-portree",
+    "dream-art-portree-fotost",
+    "fantaasia-portree-fotost",
+    "dream-art-pilt-louendil",
+    "kunstiline-portree"
+  ],
+  "internalLinks": [
+    {
+      "href": "/el/blog/kunstiline-portree",
+      "label": "Καλλιτεχνικό πορτραίτο"
+    }
+  ]
+}

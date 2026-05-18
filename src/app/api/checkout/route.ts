@@ -18,7 +18,7 @@ export async function POST(req: NextRequest) {
           price_data: {
             currency: 'eur',
             product_data: {
-              name: `PopArt Portrait - ${size}`,
+              name: `ArtCanvas Portrait - ${size}`,
               images: [imageUrl],
               description: 'Custom digital painting portrait on premium canvas.',
             },

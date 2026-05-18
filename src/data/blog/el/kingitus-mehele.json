@@ -1,0 +1,48 @@
+{
+  "slug": "kingitus-mehele",
+  "category": "gifts",
+  "title": "Δώρο για αυτόν: πορτραίτο με νόημα",
+  "description": "Δώρο για άνδρα στην Ελλάδα — πορτραίτο από φωτογραφία, προεπισκόπηση και αποστολή.",
+  "publishedAt": "2026-04-10",
+  "author": {
+    "name": "ArtCanvas.gr",
+    "url": "https://www.artcanvas.gr",
+    "jobTitle": "Art services"
+  },
+  "coverImage": "/pic4.jpg",
+  "keywords": [
+    "δώρο για άνδρα",
+    "πορτραίτο",
+    "Ελλάδα"
+  ],
+  "bodyHtml": "<p>Για αυτόν, ένα πορτραίτο από φωτογραφία χόμπι ή οικογένειας είναι προσωπικό χωρίς περιττά αξεσουάρ. Επιλέξτε μέγεθος για γραφείο ή σαλόνι και επιβεβαιώστε στην προεπισκόπηση.</p><p>Ξεκινήστε στο <a href='https://www.artcanvas.gr'>ArtCanvas.gr</a> και επιβεβαιώστε την προεπισκόπηση πριν την εκτύπωση. Δείτε επίσης <a href='/el/blog/kunstiline-portree'>kunstiline-portree</a>.</p>",
+  "faqs": [
+    {
+      "question": "Ταιριάζει για πατέρα;",
+      "answer": "Ναι, ειδικά με οικογενειακές φωτογραφίες."
+    },
+    {
+      "question": "Προεπισκόπηση;",
+      "answer": "Ναι, πριν την εκτύπωση."
+    },
+    {
+      "question": "Αποστολή;",
+      "answer": "Σε όλη την Ελλάδα."
+    }
+  ],
+  "relatedSlugs": [
+    "pulmakingitus-idee",
+    "personaalne-kingitus",
+    "seinapilt-tellimine"
+  ],
+  "internalLinks": [
+    {
+      "href": "/el/blog/kingitus-naisele",
+      "label": "Δώρο για εκείνη"
+    },
+    {
+      "href": "https://www.artcanvas.gr",
+      "label": "Παραγγελία"
+    }
+  ]
+}

@@ -1,30 +1,30 @@
 {
-  "slug": "custom-portrait-estonia",
+  "slug": "custom-portrait-greece",
   "category": "portrait-guide",
-  "title": "Custom portrait Estonia: preview-first ordering",
-  "description": "Custom portrait Estonia: order from Tallinn and nationwide with preview before printing, delivery across Estonia, and realistic turnaround.",
+  "title": "Custom portrait Greece: preview-first ordering",
+  "description": "Custom portrait Greece: order from Athens and nationwide with preview before printing, delivery across Greece, and realistic turnaround.",
   "publishedAt": "2026-04-05",
   "author": {
-    "name": "PopArt.ee",
-    "url": "https://www.popart.ee",
+    "name": "ArtCanvas.gr",
+    "url": "https://www.artcanvas.gr",
     "jobTitle": "Art services"
   },
   "coverImage": "/pic2.jpg",
   "keywords": [
-    "custom portrait Estonia",
+    "custom portrait Greece",
     "canvas portrait",
-    "Tallinn",
-    "delivery across Estonia",
+    "Athens",
+    "delivery across Greece",
     "preview before printing"
   ],
-  "bodyHtml": "<p>Searching “custom portrait Estonia” usually means you want clarity: preview before printing, understandable sizing, and reliable delivery across Estonia. Even if you prefer English, you can still order with an Estonia-based workflow. Start with a sharp photo, confirm the preview, then print—see also <a href='/en/blog/kunstiline-portree'>artistic portrait</a>, <a href='/en/blog/portree-fotost-tallinn'>portrait from a photo in Tallinn</a>, and <a href='/en/blog/seinapilt-tellimine'>wall art ordering</a>.</p>\n<h2>CTA</h2>\n<p>Start on <a href='https://www.popart.ee'>PopArt.ee</a> and confirm the preview before printing.</p>",
+  "bodyHtml": "<p>Searching “custom portrait Greece” usually means you want clarity: preview before printing, understandable sizing, and reliable delivery across Greece. Even if you prefer English, you can still order with an Greece-based workflow. Start with a sharp photo, confirm the preview, then print—see also <a href='/en/blog/kunstiline-portree'>artistic portrait</a>, <a href='/en/blog/portree-fotost-athens'>portrait from a photo in Athens</a>, and <a href='/en/blog/seinapilt-tellimine'>wall art ordering</a>.</p>\n<h2>CTA</h2>\n<p>Start on <a href='https://www.artcanvas.gr'>ArtCanvas.gr</a> and confirm the preview before printing.</p>",
   "faqs": [
     {
       "question": "Can I order in English?",
       "answer": "Many workflows support English messaging; confirm on the order page."
     },
     {
-      "question": "Delivery across Estonia?",
+      "question": "Delivery across Greece?",
       "answer": "Yes—timing depends on region."
     },
     {
@@ -50,7 +50,7 @@
   ],
   "relatedSlugs": [
     "kunstiline-portree",
-    "portree-fotost-tallinn",
+    "portree-fotost-athens",
     "seinapilt-tellimine"
   ],
   "internalLinks": [
@@ -59,16 +59,16 @@
       "label": "Artistic portrait"
     },
     {
-      "href": "/en/blog/portree-fotost-tallinn",
-      "label": "Portrait from a photo in Tallinn"
+      "href": "/en/blog/portree-fotost-athens",
+      "label": "Portrait from a photo in Athens"
     },
     {
       "href": "/en/blog/seinapilt-tellimine",
       "label": "Wall art ordering"
     },
     {
-      "href": "https://www.popart.ee",
-      "label": "Order on PopArt.ee"
+      "href": "https://www.artcanvas.gr",
+      "label": "Order on ArtCanvas.gr"
     }
   ]
 }

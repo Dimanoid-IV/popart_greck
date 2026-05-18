@@ -4,7 +4,7 @@ export const BLOG_CATEGORY_IDS: BlogCategoryId[] = [
   "gifts",
   "portrait-guide",
   "interior",
-  "local-estonia",
+  "local-greece",
   "dream-art",
 ];
 
@@ -22,17 +22,11 @@ export function getCategoryCopy(
     Record<BlogLocale, { title: string; description: string; short: string }>
   > = {
     gifts: {
-      et: {
-        title: "Kingitused",
-        short: "Kingitused",
+      el: {
+        title: "Δώρα",
+        short: "Δώρα",
         description:
-          "Ideid ja juhendid portreedest kingituseks — sünnipäevad, tähtpäevad ja personaalsed üllatused.",
-      },
-      ru: {
-        title: "Подарки",
-        short: "Подарки",
-        description:
-          "Идеи и советы по портретам в подарок: дни рождения, праздники и персональные сюрпризы.",
+          "Ιδέες και οδηγοί για πορτραίτα-δώρα — γενέθλια, επετείους και προσωπικές εκπλήξεις.",
       },
       en: {
         title: "Gifts",
@@ -42,37 +36,25 @@ export function getCategoryCopy(
       },
     },
     "portrait-guide": {
-      et: {
-        title: "Portree juhend",
-        short: "Portree juhend",
+      el: {
+        title: "Οδηγός πορτραίτου",
+        short: "Οδηγός",
         description:
-          "Kuidas valida fotot, suurust ja stiili kunstilise portree tellimiseks Eestis.",
-      },
-      ru: {
-        title: "Гид по портретам",
-        short: "Гид по портретам",
-        description:
-          "Как выбрать фото, размер и стиль для заказа художественного портрета в Эстонии.",
+          "Πώς να επιλέξετε φωτογραφία, μέγεθος και στυλ για καλλιτεχνικό πορτραίτο στην Ελλάδα.",
       },
       en: {
         title: "Portrait guide",
         short: "Portrait guide",
         description:
-          "How to choose photos, sizes, and style when ordering an artistic portrait in Estonia.",
+          "How to choose photos, sizes, and style when ordering an artistic portrait in Greece.",
       },
     },
     interior: {
-      et: {
-        title: "Interjöör",
-        short: "Interjöör",
+      el: {
+        title: "Εσωτερικό χώρο",
+        short: "Εσωτερικό",
         description:
-          "Portree ja lõuend elamus- ja magamistoas — mõõdud, valgus ja paigutus.",
-      },
-      ru: {
-        title: "Интерьер",
-        short: "Интерьер",
-        description:
-          "Портрет и холст в гостиной и спальне: размеры, свет и композиция.",
+          "Πορτραίτο και καμβάς στο σαλόνι και το υπνοδωμάτιο — διαστάσεις, φως και τοποθέτηση.",
       },
       en: {
         title: "Interior",
@@ -81,44 +63,32 @@ export function getCategoryCopy(
           "Portraits and canvas in living rooms and bedrooms—sizes, light, and placement.",
       },
     },
-    "local-estonia": {
-      et: {
-        title: "Eesti ja Tallinn",
-        short: "Eesti",
+    "local-greece": {
+      el: {
+        title: "Ελλάδα και Αθήνα",
+        short: "Ελλάδα",
         description:
-          "Tellimine, tarne ja praktika kohalikele klientidele Eestis ja Tallinnas.",
-      },
-      ru: {
-        title: "Эстония и Таллин",
-        short: "Эстония",
-        description:
-          "Заказ, доставка и практические советы для клиентов в Эстонии и Таллине.",
+          "Παραγγελία, αποστολή και πρακτικές συμβουλές για πελάτες στην Ελλάδα και την Αθήνα.",
       },
       en: {
-        title: "Local Estonia",
-        short: "Estonia",
+        title: "Greece & Athens",
+        short: "Greece",
         description:
-          "Ordering, delivery, and practical notes for customers in Estonia and Tallinn.",
+          "Ordering, delivery, and practical notes for customers in Greece and Athens.",
       },
     },
     "dream-art": {
-      et: {
+      el: {
         title: "Dream Art",
         short: "Dream Art",
         description:
-          "Dream Art portree fotost: unenäoline, fantaasiarikas ja premium kunstiline tõlgendus Eestis — tellimus, eelvaade ja lõuend.",
-      },
-      ru: {
-        title: "Dream Art",
-        short: "Dream Art",
-        description:
-          "Портрет Dream Art по фото: мечтательный, фантазийный стиль в Эстонии — предпросмотр и холст.",
+          "Πορτραίτο Dream Art από φωτογραφία: ονειρικό, φανταστικό premium στυλ στην Ελλάδα — παραγγελία, προεπισκόπηση και καμβάς.",
       },
       en: {
         title: "Dream Art",
         short: "Dream Art",
         description:
-          "Dream Art portraits from photos in Estonia—dreamy, fantasy-forward art with preview and canvas options.",
+          "Dream Art portraits from photos in Greece—dreamy, fantasy-forward art with preview and canvas options.",
       },
     },
   };

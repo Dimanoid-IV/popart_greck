@@ -2,21 +2,21 @@
   "slug": "kunstiline-portree",
   "category": "portrait-guide",
   "title": "Artistic portrait: style that flatters without distorting",
-  "description": "Artistic portraits in Estonia: style choices, preview before printing, canvas printing, delivery across Estonia, and realistic turnaround.",
+  "description": "Artistic portraits in Greece: style choices, preview before printing, canvas printing, delivery across Greece, and realistic turnaround.",
   "publishedAt": "2026-04-07",
   "author": {
-    "name": "PopArt.ee",
-    "url": "https://www.popart.ee",
+    "name": "ArtCanvas.gr",
+    "url": "https://www.artcanvas.gr",
     "jobTitle": "Art services"
   },
   "coverImage": "/pic11.JPG",
   "keywords": [
-    "artistic portrait Estonia",
+    "artistic portrait Greece",
     "canvas print",
-    "Tallinn",
+    "Athens",
     "preview before printing"
   ],
-  "bodyHtml": "<p>An artistic portrait should keep identity readable while adding intentional style. That balance makes it great for gifts and décor. Before printing, review canvas considerations in <a href='/en/blog/pilt-louendil'>canvas print quality</a> and ordering context in <a href='/en/blog/custom-portrait-estonia'>custom portrait in Estonia</a>.</p>\n<h2>CTA</h2>\n<p>Start on <a href='https://www.popart.ee'>PopArt.ee</a>.</p>",
+  "bodyHtml": "<p>An artistic portrait should keep identity readable while adding intentional style. That balance makes it great for gifts and décor. Before printing, review canvas considerations in <a href='/en/blog/pilt-louendil'>canvas print quality</a> and ordering context in <a href='/en/blog/custom-portrait-greece'>custom portrait in Greece</a>.</p>\n<h2>CTA</h2>\n<p>Start on <a href='https://www.artcanvas.gr'>ArtCanvas.gr</a>.</p>",
   "faqs": [
     {
       "question": "Will it still look like them?",
@@ -43,14 +43,14 @@
       "answer": "Often a strong choice."
     },
     {
-      "question": "Delivery across Estonia?",
+      "question": "Delivery across Greece?",
       "answer": "Yes."
     }
   ],
   "relatedSlugs": [
     "pilt-louendil",
-    "custom-portrait-estonia",
-    "portree-fotost-tallinn"
+    "custom-portrait-greece",
+    "portree-fotost-athens"
   ],
   "internalLinks": [
     {
@@ -58,16 +58,16 @@
       "label": "Canvas print quality"
     },
     {
-      "href": "/en/blog/custom-portrait-estonia",
-      "label": "Custom portrait in Estonia"
+      "href": "/en/blog/custom-portrait-greece",
+      "label": "Custom portrait in Greece"
     },
     {
-      "href": "/en/blog/portree-fotost-tallinn",
-      "label": "Portrait from a photo in Tallinn"
+      "href": "/en/blog/portree-fotost-athens",
+      "label": "Portrait from a photo in Athens"
     },
     {
-      "href": "https://www.popart.ee",
-      "label": "Order on PopArt.ee"
+      "href": "https://www.artcanvas.gr",
+      "label": "Order on ArtCanvas.gr"
     }
   ]
 }

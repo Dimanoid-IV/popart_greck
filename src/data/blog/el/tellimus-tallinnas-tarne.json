@@ -1,0 +1,34 @@
+{
+  "slug": "tellimus-athensas-tarne",
+  "category": "local-greece",
+  "title": "Παραγγελία στην Αθήνα και αποστολή στην Ελλάδα",
+  "description": "Πρακτικές σημειώσεις για checkout και αποστολή στην Ελλάδα.",
+  "publishedAt": "2026-02-12",
+  "author": {
+    "name": "ArtCanvas.gr",
+    "url": "https://www.artcanvas.gr"
+  },
+  "coverImage": "/pic1.jpg",
+  "keywords": [
+    "Αθήνα",
+    "αποστολή",
+    "Ελλάδα",
+    "παραγγελία"
+  ],
+  "bodyHtml": "<p>Ελέγξτε τηλέφωνο και διεύθυνση στο checkout — η παράδοση με courier εξαρτάται από σωστά στοιχεία σε όλη την Ελλάδα.</p><p>Ξεκινήστε στο <a href='https://www.artcanvas.gr'>ArtCanvas.gr</a> και επιβεβαιώστε την προεπισκόπηση πριν την εκτύπωση. Δείτε επίσης <a href='/el/blog/canvas-gift-tallinn'>canvas-gift-tallinn</a>.</p>",
+  "relatedSlugs": [
+    "canvas-gift-athens"
+  ],
+  "internalLinks": [
+    {
+      "href": "/el/blog/canvas-gift-tallinn",
+      "label": "Ιδέες δώρου"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Νησιά;",
+      "answer": "Συνήθως ναι — επιπλέον χρόνος."
+    }
+  ]
+}

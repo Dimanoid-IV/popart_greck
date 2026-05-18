@@ -2,20 +2,20 @@
   "slug": "seinapilt-tellimine",
   "category": "interior",
   "title": "Ordering wall art: measure light, distance, and intent",
-  "description": "Wall art ordering in Estonia: sizing, lighting, preview before printing, delivery across Estonia, and realistic turnaround.",
+  "description": "Wall art ordering in Greece: sizing, lighting, preview before printing, delivery across Greece, and realistic turnaround.",
   "publishedAt": "2026-04-06",
   "author": {
-    "name": "PopArt.ee",
-    "url": "https://www.popart.ee",
+    "name": "ArtCanvas.gr",
+    "url": "https://www.artcanvas.gr",
     "jobTitle": "Art services"
   },
   "coverImage": "/pic4.jpg",
   "keywords": [
-    "order wall art Estonia",
+    "order wall art Greece",
     "canvas sizing",
-    "Tallinn"
+    "Athens"
   ],
-  "bodyHtml": "<p>Wall art works when it matches the room’s intent: accent vs atmosphere. Measure the wall, stand back, and sanity-check proportions. Pair with <a href='/en/blog/pilt-louendil'>canvas print quality</a> and <a href='/en/blog/portree-fotost-tallinn'>portrait from a photo in Tallinn</a>.</p>\n<h2>CTA</h2>\n<p>Start on <a href='https://www.popart.ee'>PopArt.ee</a>.</p>",
+  "bodyHtml": "<p>Wall art works when it matches the room’s intent: accent vs atmosphere. Measure the wall, stand back, and sanity-check proportions. Pair with <a href='/en/blog/pilt-louendil'>canvas print quality</a> and <a href='/en/blog/portree-fotost-athens'>portrait from a photo in Athens</a>.</p>\n<h2>CTA</h2>\n<p>Start on <a href='https://www.artcanvas.gr'>ArtCanvas.gr</a>.</p>",
   "faqs": [
     {
       "question": "How to pick a size?",
@@ -26,7 +26,7 @@
       "answer": "Yes."
     },
     {
-      "question": "Delivery across Estonia?",
+      "question": "Delivery across Greece?",
       "answer": "Yes."
     },
     {
@@ -48,7 +48,7 @@
   ],
   "relatedSlugs": [
     "pilt-louendil",
-    "portree-fotost-tallinn",
+    "portree-fotost-athens",
     "pulmakingitus-idee"
   ],
   "internalLinks": [
@@ -61,12 +61,12 @@
       "label": "Wedding gift ideas"
     },
     {
-      "href": "/en/blog/portree-fotost-tallinn",
-      "label": "Portrait from a photo in Tallinn"
+      "href": "/en/blog/portree-fotost-athens",
+      "label": "Portrait from a photo in Athens"
     },
     {
-      "href": "https://www.popart.ee",
-      "label": "Order on PopArt.ee"
+      "href": "https://www.artcanvas.gr",
+      "label": "Order on ArtCanvas.gr"
     }
   ]
 }

@@ -1,11 +1,11 @@
 import type { BlogLocale } from "./types";
+import { SITE_ORIGIN } from "@/lib/seo/site-config";
 
-export const SITE_URL = "https://www.popart.ee";
+export const SITE_URL = SITE_ORIGIN;
 
-export const BLOG_LOCALES: BlogLocale[] = ["et", "ru", "en"];
+export const BLOG_LOCALES: BlogLocale[] = ["el", "en"];
 
 export const BLOG_LOCALE_LABELS: Record<BlogLocale, string> = {
-  et: "Eesti",
-  ru: "Русский",
+  el: "Ελληνικά",
   en: "English",
 };

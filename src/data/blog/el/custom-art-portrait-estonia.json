@@ -1,0 +1,35 @@
+{
+  "slug": "custom-art-portrait-greece",
+  "category": "portrait-guide",
+  "title": "Custom art portrait στην Ελλάδα",
+  "description": "Καλλιτεχνικό custom πορτραίτο — Ελλάδα, προεπισκόπηση, καμβάς.",
+  "publishedAt": "2026-02-20",
+  "updatedAt": "2026-02-25",
+  "author": {
+    "name": "ArtCanvas.gr",
+    "url": "https://www.artcanvas.gr",
+    "jobTitle": "Art services"
+  },
+  "coverImage": "/pic11.JPG",
+  "keywords": [
+    "custom portrait",
+    "Ελλάδα",
+    "τέχνη"
+  ],
+  "bodyHtml": "<p>Custom art portrait συνδυάζει καλλιτεχνικό στυλ και πρακτική παραγγελία με προεπισκόπηση στην Ελλάδα.</p><p>Ξεκινήστε στο <a href='https://www.artcanvas.gr'>ArtCanvas.gr</a> και επιβεβαιώστε την προεπισκόπηση πριν την εκτύπωση. Δείτε επίσης <a href='/el/blog/custom-portrait-estonia'>custom-portrait-estonia</a>.</p>",
+  "faqs": [
+    {
+      "question": "Για εξωτερικούς;",
+      "answer": "Ναι — αποστολή στην Ελλάδα."
+    }
+  ],
+  "relatedSlugs": [
+    "canvas-gift-athens"
+  ],
+  "internalLinks": [
+    {
+      "href": "/el/blog/custom-portrait-estonia",
+      "label": "Προσωποποιημένο πορτραίτο"
+    }
+  ]
+}

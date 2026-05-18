@@ -1,0 +1,38 @@
+{
+  "slug": "dream-art-portree-fotost",
+  "category": "dream-art",
+  "title": "Dream Art πορτραίτο από τη φωτογραφία σας",
+  "description": "Πώς παραγγέλνετε Dream Art στην Ελλάδα.",
+  "publishedAt": "2026-05-04",
+  "author": {
+    "name": "ArtCanvas.gr",
+    "url": "https://www.artcanvas.gr",
+    "jobTitle": "Art services"
+  },
+  "coverImage": "/pic33.JPG",
+  "keywords": [
+    "Dream Art",
+    "φωτογραφία",
+    "Ελλάδα"
+  ],
+  "bodyHtml": "<p>Ανεβάστε φωτογραφία, επιλέξτε μέγεθος, δείτε Dream Art στην προεπισκόπηση και εκτυπώστε σε καμβά.</p><p>Ξεκινήστε στο <a href='https://www.artcanvas.gr'>ArtCanvas.gr</a> και επιβεβαιώστε την προεπισκόπηση πριν την εκτύπωση.</p>",
+  "faqs": [
+    {
+      "question": "Χρόνος;",
+      "answer": "Εξαρτάται από ουρά και έγκριση."
+    }
+  ],
+  "relatedSlugs": [
+    "dream-art-portree",
+    "digitaalne-kunstiline-portree",
+    "fantaasia-portree-fotost",
+    "dream-art-pilt-louendil",
+    "kunstiline-portree"
+  ],
+  "internalLinks": [
+    {
+      "href": "/el/blog/dream-art-portree",
+      "label": "Dream Art"
+    }
+  ]
+}

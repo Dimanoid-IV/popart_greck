@@ -14,6 +14,11 @@ import { getBlogUiLabels } from "@/lib/blog/ui-labels";
 import BlogCategoryChips from "@/components/blog/BlogCategoryChips";
 import BlogListCroBanner from "@/components/blog/BlogListCroBanner";
 import { getBlogCroLabels } from "@/lib/blog/cro-labels";
+import {
+  blogOpenGraphLocale,
+  blogSchemaLanguage,
+  blogSiteName,
+} from "@/lib/blog/locale-meta";
 import BlogArticleImage from "@/components/blog/BlogArticleImage";
 
 export async function generateStaticParams() {
@@ -31,7 +36,7 @@ export async function generateMetadata({
   const labels = getBlogUiLabels(locale);
   const canonical = blogIndexUrl(locale);
   return {
-    title: `${labels.blogTitle} | PopArt.ee`,
+    title: `${labels.blogTitle} | ${blogSiteName}`,
     description: labels.blogIntro,
     alternates: {
       canonical,
@@ -43,8 +48,8 @@ export async function generateMetadata({
       url: canonical,
       title: labels.blogTitle,
       description: labels.blogIntro,
-      siteName: "PopArt.ee",
-      locale: locale === "et" ? "et_EE" : locale === "ru" ? "ru_RU" : "en_US",
+      siteName: blogSiteName,
+      locale: blogOpenGraphLocale(locale),
       type: "website",
     },
     twitter: {
@@ -76,9 +81,8 @@ export default async function BlogIndexPage({
         name: labels.blogTitle,
         description: labels.blogIntro,
         url: blogIndexUrl(locale),
-        inLanguage:
-          locale === "et" ? "et-EE" : locale === "ru" ? "ru-EE" : "en-EE",
-        isPartOf: { "@type": "WebSite", name: "PopArt.ee", url: SITE_URL },
+        inLanguage: blogSchemaLanguage(locale),
+        isPartOf: { "@type": "WebSite", name: blogSiteName, url: SITE_URL },
       },
       {
         "@type": "BreadcrumbList",
@@ -86,7 +90,7 @@ export default async function BlogIndexPage({
           {
             "@type": "ListItem",
             position: 1,
-            name: "PopArt.ee",
+            name: blogSiteName,
             item: SITE_URL,
           },
           {

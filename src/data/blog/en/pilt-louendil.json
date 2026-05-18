@@ -2,21 +2,21 @@
   "slug": "pilt-louendil",
   "category": "interior",
   "title": "Canvas print quality: what actually matters before you order",
-  "description": "Canvas prints in Estonia: sizing, sharpness, color, preview before printing, delivery across Estonia, and realistic turnaround.",
+  "description": "Canvas prints in Greece: sizing, sharpness, color, preview before printing, delivery across Greece, and realistic turnaround.",
   "publishedAt": "2026-04-08",
   "author": {
-    "name": "PopArt.ee",
-    "url": "https://www.popart.ee",
+    "name": "ArtCanvas.gr",
+    "url": "https://www.artcanvas.gr",
     "jobTitle": "Art services"
   },
   "coverImage": "/pic22.JPG",
   "keywords": [
-    "canvas print Estonia",
+    "canvas print Greece",
     "wall art",
-    "Tallinn",
+    "Athens",
     "preview before printing"
   ],
-  "bodyHtml": "<p>A canvas print is a popular way to make art feel “real” in a room. The canvas texture softens digital edges and interacts with light. For sizing and placement, read <a href='/en/blog/seinapilt-tellimine'>wall art ordering</a> and <a href='/en/blog/kunstiline-portree'>artistic portrait</a> guidance.</p>\n<h2>Sharpness rules</h2>\n<p>Printing magnifies softness. Choose the sharpest photo with readable eye detail. For ordering context, see <a href='/en/blog/portree-fotost-tallinn'>portrait from a photo in Tallinn</a>.</p>\n<h2>CTA</h2>\n<p>Start on <a href='https://www.popart.ee'>PopArt.ee</a> and confirm the preview before printing.</p>",
+  "bodyHtml": "<p>A canvas print is a popular way to make art feel “real” in a room. The canvas texture softens digital edges and interacts with light. For sizing and placement, read <a href='/en/blog/seinapilt-tellimine'>wall art ordering</a> and <a href='/en/blog/kunstiline-portree'>artistic portrait</a> guidance.</p>\n<h2>Sharpness rules</h2>\n<p>Printing magnifies softness. Choose the sharpest photo with readable eye detail. For ordering context, see <a href='/en/blog/portree-fotost-athens'>portrait from a photo in Athens</a>.</p>\n<h2>CTA</h2>\n<p>Start on <a href='https://www.artcanvas.gr'>ArtCanvas.gr</a> and confirm the preview before printing.</p>",
   "faqs": [
     {
       "question": "Canvas vs paper?",
@@ -43,14 +43,14 @@
       "answer": "Depends on queue; ask for deadlines."
     },
     {
-      "question": "Delivery across Estonia?",
+      "question": "Delivery across Greece?",
       "answer": "Yes."
     }
   ],
   "relatedSlugs": [
     "seinapilt-tellimine",
     "kunstiline-portree",
-    "portree-fotost-tallinn"
+    "portree-fotost-athens"
   ],
   "internalLinks": [
     {
@@ -62,12 +62,12 @@
       "label": "Artistic portrait"
     },
     {
-      "href": "/en/blog/portree-fotost-tallinn",
-      "label": "Portrait from a photo in Tallinn"
+      "href": "/en/blog/portree-fotost-athens",
+      "label": "Portrait from a photo in Athens"
     },
     {
-      "href": "https://www.popart.ee",
-      "label": "Order on PopArt.ee"
+      "href": "https://www.artcanvas.gr",
+      "label": "Order on ArtCanvas.gr"
     }
   ]
 }

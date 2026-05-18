@@ -1,0 +1,37 @@
+{
+  "slug": "joulukingitus-mehele",
+  "category": "gifts",
+  "title": "Χριστουγεννιάτικο δώρο για αυτόν",
+  "description": "Πορτραίτο-δώρο για τις γιορτές — παραγγελία στην Ελλάδα.",
+  "publishedAt": "2026-10-05",
+  "author": {
+    "name": "ArtCanvas.gr",
+    "url": "https://www.artcanvas.gr",
+    "jobTitle": "Art services"
+  },
+  "coverImage": "/pic3.jpg",
+  "keywords": [
+    "χριστουγεννιάτικο δώρο",
+    "άνδρας",
+    "Ελλάδα"
+  ],
+  "bodyHtml": "<p>Για αυτόν, επιλέξτε φωτογραφία με νόημα και ήρεμο ή δυναμικό στυλ. Προεπισκόπηση πριν την εκτύπωση.</p><p>Ξεκινήστε στο <a href='https://www.artcanvas.gr'>ArtCanvas.gr</a> και επιβεβαιώστε την προεπισκόπηση πριν την εκτύπωση.</p>",
+  "faqs": [
+    {
+      "question": "Μέγεθος;",
+      "answer": "Ανάλογα με χώρο — γραφείο ή σαλόνι."
+    }
+  ],
+  "relatedSlugs": [
+    "joulukingitus-2026",
+    "joulukingitus-naisele",
+    "emadepaeva-kingitus",
+    "personaalne-kingitus"
+  ],
+  "internalLinks": [
+    {
+      "href": "/el/blog/joulukingitus-naisele",
+      "label": "Δώρο για εκείνη"
+    }
+  ]
+}

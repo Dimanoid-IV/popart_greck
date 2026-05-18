@@ -18,6 +18,12 @@ import {
 import { getBlogUiLabels } from "@/lib/blog/ui-labels";
 import BlogListCroBanner from "@/components/blog/BlogListCroBanner";
 import { getBlogCroLabels } from "@/lib/blog/cro-labels";
+import {
+  blogOpenGraphLocale,
+  blogSchemaLanguage,
+  blogSiteName,
+  defaultBlogLocale,
+} from "@/lib/blog/locale-meta";
 import BlogArticleImage from "@/components/blog/BlogArticleImage";
 
 export async function generateStaticParams() {
@@ -38,19 +44,19 @@ export async function generateMetadata({
   const languages = Object.fromEntries(
     BLOG_LOCALES.map((l) => [l, blogCategoryUrl(l, category)])
   ) as Record<string, string>;
-  languages["x-default"] = blogCategoryUrl("et", category);
+  languages["x-default"] = blogCategoryUrl(defaultBlogLocale(), category);
 
   return {
-    title: `${copy.title} | ${getBlogUiLabels(locale).blogTitle} | PopArt.ee`,
+    title: `${copy.title} | ${getBlogUiLabels(locale).blogTitle} | ${blogSiteName}`,
     description: copy.description,
     alternates: { canonical, languages },
     openGraph: {
       url: canonical,
       title: copy.title,
       description: copy.description,
-      siteName: "PopArt.ee",
+      siteName: blogSiteName,
       type: "website",
-      locale: locale === "et" ? "et_EE" : locale === "ru" ? "ru_RU" : "en_US",
+      locale: blogOpenGraphLocale(locale),
     },
     twitter: {
       card: "summary_large_image",
@@ -85,9 +91,8 @@ export default async function BlogCategoryPage({
         name: copy.title,
         description: copy.description,
         url: canonical,
-        inLanguage:
-          locale === "et" ? "et-EE" : locale === "ru" ? "ru-EE" : "en-EE",
-        isPartOf: { "@type": "WebSite", name: "PopArt.ee", url: SITE_URL },
+        inLanguage: blogSchemaLanguage(locale),
+        isPartOf: { "@type": "WebSite", name: blogSiteName, url: SITE_URL },
       },
       {
         "@type": "BreadcrumbList",
@@ -95,7 +100,7 @@ export default async function BlogCategoryPage({
           {
             "@type": "ListItem",
             position: 1,
-            name: "PopArt.ee",
+            name: blogSiteName,
             item: SITE_URL,
           },
           {
@@ -125,7 +130,7 @@ export default async function BlogCategoryPage({
         <ol className="flex flex-wrap items-center gap-2">
           <li>
             <Link href="/" className="hover:text-indigo-600">
-              PopArt.ee
+              {blogSiteName}
             </Link>
           </li>
           <span className="text-gray-400">/</span>

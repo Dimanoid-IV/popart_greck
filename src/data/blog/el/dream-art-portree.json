@@ -1,0 +1,38 @@
+{
+  "slug": "dream-art-portree",
+  "category": "dream-art",
+  "title": "Dream Art πορτραίτο: ονειρικό στυλ",
+  "description": "Dream Art στην Ελλάδα — premium πορτραίτο με προεπισκόπηση.",
+  "publishedAt": "2026-05-02",
+  "author": {
+    "name": "ArtCanvas.gr",
+    "url": "https://www.artcanvas.gr",
+    "jobTitle": "Art services"
+  },
+  "coverImage": "/pic4.jpg",
+  "keywords": [
+    "Dream Art",
+    "πορτραίτο",
+    "Ελλάδα"
+  ],
+  "bodyHtml": "<p>Το Dream Art είναι ονειρικό, premium στυλ πορτραίτου από φωτογραφία. Διαθέσιμο στην Ελλάδα με προεπισκόπηση και επιλογή καμβά.</p><p>Δείτε <a href='/el/blog/dream-art-portree-fotost'>Dream Art από φωτογραφία</a>.</p><p>Ξεκινήστε στο <a href='https://www.artcanvas.gr'>ArtCanvas.gr</a> και επιβεβαιώστε την προεπισκόπηση πριν την εκτύπωση.</p>",
+  "faqs": [
+    {
+      "question": "Διαφορά από κλασικό;",
+      "answer": "Πιο φανταστικό, ονειρικό φόνο."
+    }
+  ],
+  "relatedSlugs": [
+    "dream-art-portree-fotost",
+    "digitaalne-kunstiline-portree",
+    "fantaasia-portree-fotost",
+    "dream-art-pilt-louendil",
+    "kunstiline-portree"
+  ],
+  "internalLinks": [
+    {
+      "href": "/el/blog/dream-art-pilt-louendil",
+      "label": "Dream Art σε καμβά"
+    }
+  ]
+}

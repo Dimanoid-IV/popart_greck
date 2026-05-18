@@ -2,21 +2,21 @@
   "slug": "kingitus-mehele",
   "category": "gifts",
   "title": "A gift for him that still feels intentional",
-  "description": "Gift for him in Estonia: portrait from a photo, preview before printing, delivery across Estonia, and realistic turnaround.",
+  "description": "Gift for him in Greece: portrait from a photo, preview before printing, delivery across Greece, and realistic turnaround.",
   "publishedAt": "2026-04-10",
   "author": {
-    "name": "PopArt.ee",
-    "url": "https://www.popart.ee",
+    "name": "ArtCanvas.gr",
+    "url": "https://www.artcanvas.gr",
     "jobTitle": "Art services"
   },
   "coverImage": "/pic4.jpg",
   "keywords": [
-    "gift for him Estonia",
+    "gift for him Greece",
     "canvas portrait",
-    "Tallinn",
-    "delivery across Estonia"
+    "Athens",
+    "delivery across Greece"
   ],
-  "bodyHtml": "<p>Functional gifts are easy, but emotional gifts last. A portrait from a shared photo adds narrative without feeling theatrical—especially if you choose a calm composition. For wedding contexts, see <a href='/en/blog/pulmakingitus-idee'>wedding gift ideas</a> and <a href='/en/blog/seinapilt-tellimine'>wall art ordering</a>.</p>\n<h2>CTA</h2>\n<p>Start on <a href='https://www.popart.ee'>PopArt.ee</a> and confirm the preview before printing.</p>",
+  "bodyHtml": "<p>Functional gifts are easy, but emotional gifts last. A portrait from a shared photo adds narrative without feeling theatrical—especially if you choose a calm composition. For wedding contexts, see <a href='/en/blog/pulmakingitus-idee'>wedding gift ideas</a> and <a href='/en/blog/seinapilt-tellimine'>wall art ordering</a>.</p>\n<h2>CTA</h2>\n<p>Start on <a href='https://www.artcanvas.gr'>ArtCanvas.gr</a> and confirm the preview before printing.</p>",
   "faqs": [
     {
       "question": "Is a portrait a good gift for men?",
@@ -31,7 +31,7 @@
       "answer": "Choose a calmer style; emotion can live in the photo itself."
     },
     {
-      "question": "Delivery across Estonia?",
+      "question": "Delivery across Greece?",
       "answer": "Yes."
     },
     {
@@ -66,8 +66,8 @@
       "label": "Wall art ordering"
     },
     {
-      "href": "https://www.popart.ee",
-      "label": "Order on PopArt.ee"
+      "href": "https://www.artcanvas.gr",
+      "label": "Order on ArtCanvas.gr"
     }
   ]
 }

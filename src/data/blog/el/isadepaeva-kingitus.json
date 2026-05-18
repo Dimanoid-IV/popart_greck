@@ -1,0 +1,37 @@
+{
+  "slug": "isadepaeva-kingitus",
+  "category": "gifts",
+  "title": "Δώρο για την Ημέρα του Πατέρα",
+  "description": "Πορτραίτο δώρο για τον πατέρα — παραγγελία στην Ελλάδα.",
+  "publishedAt": "2026-10-20",
+  "author": {
+    "name": "ArtCanvas.gr",
+    "url": "https://www.artcanvas.gr",
+    "jobTitle": "Art services"
+  },
+  "coverImage": "/pic2.jpg",
+  "keywords": [
+    "Ημέρα του Πατέρα",
+    "δώρο",
+    "πορτραίτο"
+  ],
+  "bodyHtml": "<p>Για τον πατέρα, μια οικογενειακή φωτογραφία σε καμβά είναι συγκινητικό και διαχρονικό δώρο.</p><p>Ξεκινήστε στο <a href='https://www.artcanvas.gr'>ArtCanvas.gr</a> και επιβεβαιώστε την προεπισκόπηση πριν την εκτύπωση.</p>",
+  "faqs": [
+    {
+      "question": "Πότε να παραγγείλω;",
+      "answer": "1–2 εβδομάδες πριν την γιορτή."
+    }
+  ],
+  "relatedSlugs": [
+    "joulukingitus-2026",
+    "joulukingitus-naisele",
+    "joulukingitus-mehele",
+    "personaalne-kingitus"
+  ],
+  "internalLinks": [
+    {
+      "href": "/el/blog/kingitus-mehele",
+      "label": "Δώρο για αυτόν"
+    }
+  ]
+}

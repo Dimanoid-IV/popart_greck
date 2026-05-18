@@ -1,27 +1,27 @@
 {
-  "slug": "tellimus-tallinnas-tarne",
-  "category": "local-estonia",
-  "title": "Ordering in Tallinn and Estonia: delivery notes",
-  "description": "Practical notes on checkout details and delivery across Estonia.",
+  "slug": "tellimus-athensas-tarne",
+  "category": "local-greece",
+  "title": "Ordering in Athens and Greece: delivery notes",
+  "description": "Practical notes on checkout details and delivery across Greece.",
   "publishedAt": "2026-02-12",
   "author": {
-    "name": "PopArt.ee",
-    "url": "https://www.popart.ee"
+    "name": "ArtCanvas.gr",
+    "url": "https://www.artcanvas.gr"
   },
   "coverImage": "/pic1.jpg",
   "keywords": [
-    "Tallinn",
+    "Athens",
     "delivery",
-    "Estonia",
+    "Greece",
     "order"
   ],
   "bodyHtml": "<p>Double-check phone and address at checkout—courier delivery depends on accurate details.</p>",
   "relatedSlugs": [
-    "canvas-gift-tallinn"
+    "canvas-gift-athens"
   ],
   "internalLinks": [
     {
-      "href": "/en/blog/canvas-gift-tallinn",
+      "href": "/en/blog/canvas-gift-athens",
       "label": "Gift ideas"
     }
   ]

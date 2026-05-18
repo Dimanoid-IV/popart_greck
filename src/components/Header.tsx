@@ -1,8 +1,9 @@
 "use client";
 
-import Link from 'next/link';
-import { useLanguage } from '@/lib/LanguageContext';
-import { Language } from '@/lib/translations';
+import Link from "next/link";
+import { useLanguage } from "@/lib/LanguageContext";
+import { LANGUAGE_LABELS, Language } from "@/lib/translations";
+import { SITE_NAME } from "@/lib/seo/site-config";
 
 export default function Header() {
   const { language, setLanguage, t } = useLanguage();
@@ -11,27 +12,43 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-white/80 backdrop-blur-md">
       <div className="container mx-auto flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center space-x-2">
-          <span className="text-2xl font-bold tracking-tighter text-indigo-600">PopArt.ee</span>
+          <span className="text-2xl font-bold tracking-tighter text-indigo-600">
+            {SITE_NAME}
+          </span>
         </Link>
         <nav className="hidden md:flex space-x-8 text-sm font-medium">
-          <Link href="#how-it-works" className="text-gray-600 hover:text-indigo-600">{t.nav.howItWorks}</Link>
-          <Link href="#pricing" className="text-gray-600 hover:text-indigo-600">{t.nav.pricing}</Link>
-          <Link href="#gallery" className="text-gray-600 hover:text-indigo-600">{t.nav.gallery}</Link>
-          <Link href={`/${language}/blog`} className="text-gray-600 hover:text-indigo-600">{t.nav.blog}</Link>
+          <Link
+            href="#how-it-works"
+            className="text-gray-600 hover:text-indigo-600"
+          >
+            {t.nav.howItWorks}
+          </Link>
+          <Link href="#pricing" className="text-gray-600 hover:text-indigo-600">
+            {t.nav.pricing}
+          </Link>
+          <Link href="#gallery" className="text-gray-600 hover:text-indigo-600">
+            {t.nav.gallery}
+          </Link>
+          <Link
+            href={`/${language}/blog`}
+            className="text-gray-600 hover:text-indigo-600"
+          >
+            {t.nav.blog}
+          </Link>
         </nav>
         <div className="flex items-center space-x-4">
           <div className="flex bg-gray-100 p-1 rounded-lg">
-            {(['en', 'ru', 'et'] as Language[]).map((lang) => (
+            {(["el", "en"] as Language[]).map((lang) => (
               <button
                 key={lang}
                 onClick={() => setLanguage(lang)}
                 className={`px-2 py-1 text-xs font-bold rounded-md transition-all ${
-                  language === lang 
-                    ? 'bg-white text-indigo-600 shadow-sm' 
-                    : 'text-gray-500 hover:text-gray-700'
+                  language === lang
+                    ? "bg-white text-indigo-600 shadow-sm"
+                    : "text-gray-500 hover:text-gray-700"
                 }`}
               >
-                {lang.toUpperCase()}
+                {LANGUAGE_LABELS[lang]}
               </button>
             ))}
           </div>
@@ -46,4 +63,3 @@ export default function Header() {
     </header>
   );
 }
-

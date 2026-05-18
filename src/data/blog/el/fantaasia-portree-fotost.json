@@ -1,0 +1,37 @@
+{
+  "slug": "fantaasia-portree-fotost",
+  "category": "dream-art",
+  "title": "Φανταστικό πορτραίτο από φωτογραφία",
+  "description": "Φανταστικό στυλ πορτραίτου — παραγγελία στην Ελλάδα.",
+  "publishedAt": "2026-05-08",
+  "author": {
+    "name": "ArtCanvas.gr",
+    "url": "https://www.artcanvas.gr",
+    "jobTitle": "Art services"
+  },
+  "coverImage": "/pic1.jpg",
+  "keywords": [
+    "φανταστικό πορτραίτο",
+    "Ελλάδα"
+  ],
+  "bodyHtml": "<p>Για τολμηρό στυλ, το φανταστικό πορτραίτο προσθέτει ονειρικά στοιχεία. Επιβεβαιώστε στην προεπισκόπηση.</p><p>Ξεκινήστε στο <a href='https://www.artcanvas.gr'>ArtCanvas.gr</a> και επιβεβαιώστε την προεπισκόπηση πριν την εκτύπωση. Δείτε επίσης <a href='/el/blog/dream-art-portree'>dream-art-portree</a>.</p>",
+  "faqs": [
+    {
+      "question": "Για παιδιά;",
+      "answer": "Ναι, με κατάλληλη φωτογραφία."
+    }
+  ],
+  "relatedSlugs": [
+    "dream-art-portree",
+    "dream-art-portree-fotost",
+    "digitaalne-kunstiline-portree",
+    "dream-art-pilt-louendil",
+    "kunstiline-portree"
+  ],
+  "internalLinks": [
+    {
+      "href": "/el/blog/dream-art-portree",
+      "label": "Dream Art"
+    }
+  ]
+}

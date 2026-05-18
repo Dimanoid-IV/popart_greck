@@ -61,7 +61,7 @@ export async function POST(req: NextRequest) {
         const customerEmailResult = await resend.emails.send({
           from: process.env.RESEND_FROM_EMAIL || 'onboarding@resend.dev', // Use verified domain or Resend default
           to: customerEmail,
-          subject: 'Your PopArt.ee Order Confirmation',
+          subject: 'Your ArtCanvas.gr Order Confirmation',
           html: `
             <!DOCTYPE html>
             <html>
@@ -108,8 +108,8 @@ export async function POST(req: NextRequest) {
                   <p>We'll notify you once your order is ready for shipment!</p>
                 </div>
                 <div class="footer">
-                  <p>PopArt.ee - Transforming memories into art</p>
-                  <p>If you have any questions, please contact us at info@popart.ee</p>
+                  <p>ArtCanvas.gr - Transforming memories into art</p>
+                  <p>If you have any questions, please contact us at info@artcanvas.gr</p>
                 </div>
               </div>
             </body>

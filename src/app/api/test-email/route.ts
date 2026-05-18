@@ -43,7 +43,7 @@ export async function POST(req: NextRequest) {
     const adminResult = await resend.emails.send({
       from: process.env.RESEND_FROM_EMAIL || 'onboarding@resend.dev',
       to: 'dmitri.ivkin@gmail.com',
-      subject: 'Test Email from PopArt.ee',
+      subject: 'Test Email from ArtCanvas.gr',
       html: `
         <h1>Test Email</h1>
         <p>This is a test email to verify that Resend is working correctly.</p>
@@ -58,7 +58,7 @@ export async function POST(req: NextRequest) {
       customerResult = await resend.emails.send({
         from: process.env.RESEND_FROM_EMAIL || 'onboarding@resend.dev',
         to: testEmail,
-        subject: 'Test Email from PopArt.ee',
+        subject: 'Test Email from ArtCanvas.gr',
         html: `
           <h1>Test Email</h1>
           <p>This is a test email to verify that Resend is working correctly.</p>

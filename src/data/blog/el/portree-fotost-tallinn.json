@@ -1,0 +1,40 @@
+{
+  "slug": "portree-fotost-athens",
+  "category": "local-greece",
+  "title": "Πορτραίτο από φωτογραφία στην Αθήνα",
+  "description": "Πορτραίτο από φωτογραφία — παραγγελία από Αθήνα και όλη την Ελλάδα.",
+  "publishedAt": "2026-04-14",
+  "author": {
+    "name": "ArtCanvas.gr",
+    "url": "https://www.artcanvas.gr",
+    "jobTitle": "Art services"
+  },
+  "coverImage": "/pic3.jpg",
+  "keywords": [
+    "πορτραίτο Αθήνα",
+    "φωτογραφία",
+    "Ελλάδα"
+  ],
+  "bodyHtml": "<p>Από την Αθήνα ή οπουδήποτε στην Ελλάδα, η διαδικασία είναι online: ανέβασμα, προεπισκόπηση, εκτύπωση και αποστολή.</p><p>Ξεκινήστε στο <a href='https://www.artcanvas.gr'>ArtCanvas.gr</a> και επιβεβαιώστε την προεπισκόπηση πριν την εκτύπωση. Δείτε επίσης <a href='/el/blog/custom-portrait-estonia'>custom-portrait-estonia</a>.</p>",
+  "faqs": [
+    {
+      "question": "Μόνο Αθήνα;",
+      "answer": "Όχι — όλη η Ελλάδα."
+    },
+    {
+      "question": "Παραλαβή;",
+      "answer": "Με courier — επιβεβαιώστε διεύθυνση."
+    }
+  ],
+  "relatedSlugs": [
+    "kunstiline-portree",
+    "pilt-louendil",
+    "seinapilt-tellimine"
+  ],
+  "internalLinks": [
+    {
+      "href": "/el/blog/tellimus-tallinnas-tarne",
+      "label": "Αποστολή"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "kunstiline-portree",
+  "category": "portrait-guide",
+  "title": "Καλλιτεχνικό πορτραίτο από τη φωτογραφία σας",
+  "description": "Καλλιτεχνικό πορτραίτο στην Ελλάδα — στυλ, προεπισκόπηση και καμβάς.",
+  "publishedAt": "2026-04-07",
+  "author": {
+    "name": "ArtCanvas.gr",
+    "url": "https://www.artcanvas.gr",
+    "jobTitle": "Art services"
+  },
+  "coverImage": "/pic11.JPG",
+  "keywords": [
+    "καλλιτεχνικό πορτραίτο",
+    "Ελλάδα",
+    "καμβάς"
+  ],
+  "bodyHtml": "<p>Το καλλιτεχνικό πορτραίτο μετατρέπει μια φωτογραφία σε ζωγραφική με επιλεγμένο φόνο. Στην Ελλάδα, η ροή περιλαμβάνει προεπισκόπηση πριν την εκτύπωση.</p><p>Δείτε <a href='/el/blog/digitaalne-kunstiline-portree'>ψηφιακή ζωγραφική</a> και <a href='/el/blog/pilt-louendil'>εκτύπωση σε καμβά</a>.</p><p>Ξεκινήστε στο <a href='https://www.artcanvas.gr'>ArtCanvas.gr</a> και επιβεβαιώστε την προεπισκόπηση πριν την εκτύπωση.</p>",
+  "faqs": [
+    {
+      "question": "Φίλτρο ή ζωγραφική;",
+      "answer": "Καλλιτεχνική απόδοση, όχι απλό φίλτρο."
+    },
+    {
+      "question": "Προεπισκόπηση;",
+      "answer": "Ναι."
+    }
+  ],
+  "relatedSlugs": [
+    "pilt-louendil",
+    "custom-portrait-greece",
+    "portree-fotost-athens"
+  ],
+  "internalLinks": [
+    {
+      "href": "/el/blog/pilt-louendil",
+      "label": "Καμβάς"
+    }
+  ]
+}

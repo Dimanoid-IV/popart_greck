@@ -1,0 +1,40 @@
+{
+  "slug": "personaalne-kingitus",
+  "category": "gifts",
+  "title": "Προσωπικό δώρο: πορτραίτο αντί για γενικό",
+  "description": "Προσωπικά δώρα με καλλιτεχνικό πορτραίτο — παραγγελία στην Ελλάδα με προεπισκόπηση.",
+  "publishedAt": "2026-04-13",
+  "author": {
+    "name": "ArtCanvas.gr",
+    "url": "https://www.artcanvas.gr",
+    "jobTitle": "Art services"
+  },
+  "coverImage": "/pic2.jpg",
+  "keywords": [
+    "προσωπικό δώρο",
+    "πορτραίτο",
+    "Ελλάδα"
+  ],
+  "bodyHtml": "<p>Ένα προσωπικό δώρο ξεχωρίζει όταν δείχνει ότι γνωρίζετε τον παραλήπτη. Το πορτραίτο από φωτογραφία είναι πρακτικό και συναισθηματικό — ιδανικό για Ελλάδα.</p><p>Ξεκινήστε στο <a href='https://www.artcanvas.gr'>ArtCanvas.gr</a> και επιβεβαιώστε την προεπισκόπηση πριν την εκτύπωση.</p>",
+  "faqs": [
+    {
+      "question": "Για ποιες περιστάσεις;",
+      "answer": "Γενέθλια, επέτειοι, γιορτές."
+    },
+    {
+      "question": "Προεπισκόπηση;",
+      "answer": "Πάντα πριν την εκτύπωση."
+    }
+  ],
+  "relatedSlugs": [
+    "kingitus-synnipaevaks",
+    "pulmakingitus-idee",
+    "kingitus-naisele"
+  ],
+  "internalLinks": [
+    {
+      "href": "/el/blog/kingitus-naisele",
+      "label": "Δώρο για εκείνη"
+    }
+  ]
+}

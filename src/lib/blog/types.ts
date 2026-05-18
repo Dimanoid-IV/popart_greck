@@ -1,11 +1,11 @@
-export type BlogLocale = "et" | "ru" | "en";
+export type BlogLocale = "el" | "en";
 
 /** URL segment under /{locale}/blog/category/[category] */
 export type BlogCategoryId =
   | "gifts"
   | "portrait-guide"
   | "interior"
-  | "local-estonia"
+  | "local-greece"
   | "dream-art";
 
 export type BlogAuthor = {

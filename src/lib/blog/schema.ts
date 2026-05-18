@@ -2,6 +2,7 @@ import type { BlogArticle } from "./types";
 import { SITE_URL } from "./constants";
 import { blogArticleUrl, blogCategoryPath, blogIndexPath } from "./paths";
 import { getCategoryCopy } from "./categories";
+import { blogSchemaLanguage, blogSiteName } from "./locale-meta";
 
 function absoluteImageUrl(coverImage: string): string {
   if (coverImage.startsWith("http")) return coverImage;
@@ -31,7 +32,7 @@ export function buildArticleGraphLd(article: BlogArticle, slug: string) {
     },
     publisher: {
       "@type": "Organization",
-      name: "PopArt.ee",
+      name: blogSiteName,
       url: SITE_URL,
       logo: {
         "@type": "ImageObject",
@@ -42,7 +43,7 @@ export function buildArticleGraphLd(article: BlogArticle, slug: string) {
       "@type": "WebPage",
       "@id": url,
     },
-    inLanguage: article.locale === "et" ? "et-EE" : article.locale === "ru" ? "ru-EE" : "en-EE",
+    inLanguage: blogSchemaLanguage(article.locale),
     keywords: article.keywords.join(", "),
   };
 
@@ -54,7 +55,7 @@ export function buildArticleGraphLd(article: BlogArticle, slug: string) {
   const crumbItems: { position: number; name: string; item: string }[] = [
     {
       position: 1,
-      name: "PopArt.ee",
+      name: blogSiteName,
       item: SITE_URL,
     },
     {

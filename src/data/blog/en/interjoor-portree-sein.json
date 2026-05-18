@@ -5,8 +5,8 @@
   "description": "How to pick canvas size and wall placement so the portrait feels natural.",
   "publishedAt": "2026-02-15",
   "author": {
-    "name": "PopArt.ee",
-    "url": "https://www.popart.ee"
+    "name": "ArtCanvas.gr",
+    "url": "https://www.artcanvas.gr"
   },
   "coverImage": "/pic11.JPG",
   "keywords": [
@@ -17,11 +17,11 @@
   ],
   "bodyHtml": "<p>In a living room a portrait often balances the sofa wall. Leave enough breathing room around the piece.</p>",
   "relatedSlugs": [
-    "custom-art-portrait-estonia"
+    "custom-art-portrait-greece"
   ],
   "internalLinks": [
     {
-      "href": "/en/blog/custom-art-portrait-estonia",
+      "href": "/en/blog/custom-art-portrait-greece",
       "label": "Portrait ordering guide"
     }
   ]

@@ -2,20 +2,20 @@
   "slug": "pulmakingitus-idee",
   "category": "gifts",
   "title": "A wedding gift idea that still feels right after the party",
-  "description": "Wedding gift ideas in Estonia: portrait from a photo, preview before printing, delivery across Estonia, and realistic timing.",
+  "description": "Wedding gift ideas in Greece: portrait from a photo, preview before printing, delivery across Greece, and realistic timing.",
   "publishedAt": "2026-04-09",
   "author": {
-    "name": "PopArt.ee",
-    "url": "https://www.popart.ee",
+    "name": "ArtCanvas.gr",
+    "url": "https://www.artcanvas.gr",
     "jobTitle": "Art services"
   },
   "coverImage": "/pic33.JPG",
   "keywords": [
-    "wedding gift idea Estonia",
+    "wedding gift idea Greece",
     "canvas portrait gift",
-    "Tallinn"
+    "Athens"
   ],
-  "bodyHtml": "<p>Great wedding gifts balance emotion and practicality. A portrait from a meaningful couple photo becomes décor they will actually hang. Plan turnaround around travel, preview approval, and delivery across Estonia.</p>\n<h2>Style safety</h2>\n<p>If you do not know their interior taste, choose a calmer composition. For bolder art, read <a href='/en/blog/kunstiline-portree'>artistic portrait</a> and <a href='/en/blog/pilt-louendil'>canvas print quality</a>.</p>\n<h2>CTA</h2>\n<p>Start on <a href='https://www.popart.ee'>PopArt.ee</a>.</p>",
+  "bodyHtml": "<p>Great wedding gifts balance emotion and practicality. A portrait from a meaningful couple photo becomes décor they will actually hang. Plan turnaround around travel, preview approval, and delivery across Greece.</p>\n<h2>Style safety</h2>\n<p>If you do not know their interior taste, choose a calmer composition. For bolder art, read <a href='/en/blog/kunstiline-portree'>artistic portrait</a> and <a href='/en/blog/pilt-louendil'>canvas print quality</a>.</p>\n<h2>CTA</h2>\n<p>Start on <a href='https://www.artcanvas.gr'>ArtCanvas.gr</a>.</p>",
   "faqs": [
     {
       "question": "Is a portrait appropriate?",
@@ -34,7 +34,7 @@
       "answer": "Choose a versatile mid size."
     },
     {
-      "question": "Delivery across Estonia?",
+      "question": "Delivery across Greece?",
       "answer": "Yes."
     },
     {
@@ -65,8 +65,8 @@
       "label": "Artistic portrait"
     },
     {
-      "href": "https://www.popart.ee",
-      "label": "Order on PopArt.ee"
+      "href": "https://www.artcanvas.gr",
+      "label": "Order on ArtCanvas.gr"
     }
   ]
 }

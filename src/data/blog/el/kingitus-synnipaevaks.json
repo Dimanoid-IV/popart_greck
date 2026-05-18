@@ -1,0 +1,40 @@
+{
+  "slug": "kingitus-synnipaevaks",
+  "category": "gifts",
+  "title": "Δώρο γενεθλίων: πορτραίτο που μένει",
+  "description": "Ιδέες δώρου γενεθλίων με πορτραίτο από φωτογραφία στην Ελλάδα.",
+  "publishedAt": "2026-04-12",
+  "author": {
+    "name": "ArtCanvas.gr",
+    "url": "https://www.artcanvas.gr",
+    "jobTitle": "Art services"
+  },
+  "coverImage": "/pic1.jpg",
+  "keywords": [
+    "δώρο γενεθλίων",
+    "πορτραίτο",
+    "Ελλάδα"
+  ],
+  "bodyHtml": "<p>Τα γενέθλια χρειάζονται δώρο με συναίσθημα. Ένα πορτραίτο από κοινή φωτογραφία λειτουργεί για κάθε ηλικία — επιλέξτε στυλ και μέγεθος με προεπισκόπηση.</p><p>Ξεκινήστε στο <a href='https://www.artcanvas.gr'>ArtCanvas.gr</a> και επιβεβαιώστε την προεπισκόπηση πριν την εκτύπωση.</p>",
+  "faqs": [
+    {
+      "question": "Χρόνος παράδοσης;",
+      "answer": "Εξαρτάται από ουρά και έγκριση προεπισκόπησης."
+    },
+    {
+      "question": "Ομαδική φωτογραφία;",
+      "answer": "Ναι, με καλό φωτισμό."
+    }
+  ],
+  "relatedSlugs": [
+    "personaalne-kingitus",
+    "kingitus-naisele",
+    "portree-fotost-athens"
+  ],
+  "internalLinks": [
+    {
+      "href": "/el/blog/personaalne-kingitus",
+      "label": "Προσωπικό δώρο"
+    }
+  ]
+}

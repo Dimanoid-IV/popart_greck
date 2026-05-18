@@ -1,0 +1,38 @@
+{
+  "slug": "dream-art-pilt-louendil",
+  "category": "dream-art",
+  "title": "Dream Art εκτύπωση σε καμβά",
+  "description": "Dream Art σε premium καμβά — αποστολή στην Ελλάδα.",
+  "publishedAt": "2026-05-10",
+  "author": {
+    "name": "ArtCanvas.gr",
+    "url": "https://www.artcanvas.gr",
+    "jobTitle": "Art services"
+  },
+  "coverImage": "/pic3.jpg",
+  "keywords": [
+    "Dream Art",
+    "καμβάς",
+    "Ελλάδα"
+  ],
+  "bodyHtml": "<p>Μετά την έγκριση προεπισκόπησης, το Dream Art εκτυπώνεται σε ποιοτικό καμβά με αποστολή στην Ελλάδα.</p><p>Ξεκινήστε στο <a href='https://www.artcanvas.gr'>ArtCanvas.gr</a> και επιβεβαιώστε την προεπισκόπηση πριν την εκτύπωση.</p>",
+  "faqs": [
+    {
+      "question": "Μέγεδη;",
+      "answer": "Διάφορα — επιλέξτε στη ροή παραγγελίας."
+    }
+  ],
+  "relatedSlugs": [
+    "dream-art-portree",
+    "dream-art-portree-fotost",
+    "digitaalne-kunstiline-portree",
+    "fantaasia-portree-fotost",
+    "kunstiline-portree"
+  ],
+  "internalLinks": [
+    {
+      "href": "/el/blog/pilt-louendil",
+      "label": "Καμβάς"
+    }
+  ]
+}
