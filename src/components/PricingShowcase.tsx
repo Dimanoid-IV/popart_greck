@@ -10,7 +10,7 @@ const CANVAS_SIZES = [
 ] as const;
 
 /** Shared baseline height; each canvas scales proportionally (45→90 cm). */
-const BASE_HEIGHT = "clamp(3.75rem, 11.5vw, 10rem)";
+const BASE_HEIGHT = "clamp(5.625rem, 17.25vw, 15rem)";
 
 export default function PricingShowcase() {
   return (
