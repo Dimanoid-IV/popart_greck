@@ -97,9 +97,8 @@ export const translations = {
       sectionDesc:
         "How we ship across Greece and what to expect before your canvas arrives.",
       paragraphs: [
-        "Orders and delivery are processed daily, Monday through Friday. Your order will be delivered to your shipping address within 4–7 days for most areas of Greece (counted from the moment you reply to the order preview email), while for hard-to-reach areas delivery may take 5–8 days.",
+        "Orders and delivery are processed daily, Monday through Friday. Your order will be delivered to your shipping address within 4–7 days for most areas of Greece; for hard-to-reach areas delivery may take 5–8 days.",
         "For paintings larger than 40×50 cm, an additional delivery fee may apply, and cash on delivery may not be available. In any case, you will be notified before your order is fulfilled.",
-        "Free delivery on orders over €80 applies only to photo wallpapers and wall decals, not to paintings.",
         "In remote areas (as defined by carriers and courier services), delivery to your address may not be possible; you may need to collect your order from the nearest pickup point or courier depot.",
       ],
     },
@@ -206,9 +205,8 @@ export const translations = {
       sectionDesc:
         "Πώς αποστέλλουμε σε όλη την Ελλάδα και τι να περιμένετε πριν φτάσει ο καμβάς σας.",
       paragraphs: [
-        "Οι παραγγελίες και οι αποστολές πραγματοποιούνται καθημερινά, από Δευτέρα έως Παρασκευή. Η παραγγελία σας θα παραδοθεί στη διεύθυνση αποστολής εντός 4–7 ημερών για τις περισσότερες περιοχές της Ελλάδας (από τη στιγμή που απαντήσετε στο email με την προεπισκόπηση της παραγγελίας), ενώ για δυσπρόσιτες περιοχές ο χρόνος παράδοσης μπορεί να φτάσει τις 5–8 ημέρες.",
+        "Οι παραγγελίες και οι αποστολές πραγματοποιούνται καθημερινά, από Δευτέρα έως Παρασκευή. Η παραγγελία σας θα παραδοθεί στη διεύθυνση αποστολής εντός 4–7 ημερών για τις περισσότερες περιοχές της Ελλάδας· για δυσπρόσιτες περιοχές ο χρόνος παράδοσης μπορεί να φτάσει τις 5–8 ημέρες.",
         "Για πίνακες μεγαλύτερους από 40×50 cm ενδέχεται να ισχύει επιπλέον χρέωση αποστολής, και η αντικαταβολή μπορεί να μην είναι διαθέσιμη. Σε κάθε περίπτωση, θα ενημερωθείτε πριν την ολοκλήρωση της παραγγελίας.",
-        "Η δωρεάν αποστολή για παραγγελίες άνω των 80 € ισχύει μόνο για φωτοταπετσαρίες και αυτοκόλλητα, όχι για πίνακες.",
         "Σε απομακρυσμένες περιοχές (όπως ορίζουν οι μεταφορικές και οι κουριερικές εταιρείες), η παράδοση στη διεύθυνσή σας μπορεί να μην είναι εφικτή· θα χρειαστεί να παραλάβετε την παραγγελία από το πλησιέστερο σημείο παραλαβής ή γραφείο κούριερ.",
       ],
     },
