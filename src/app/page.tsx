@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import OrderFlow from "@/components/OrderFlow";
 import DeliveryInfo from "@/components/DeliveryInfo";
+import PricingShowcase from "@/components/PricingShowcase";
 import Image from "next/image";
 import { Zap, Palette, Heart } from "lucide-react";
 import { useLanguage } from "@/lib/LanguageContext";
@@ -144,51 +145,7 @@ export default function Home() {
               {t.nav.pricing}
             </h2>
 
-            <div className="relative mx-auto max-w-5xl overflow-hidden rounded-3xl border border-border shadow-xl">
-              <div className="relative aspect-[3/4] w-full sm:aspect-[4/3] md:aspect-[16/10]">
-                <Image
-                  src="/divan.png"
-                  alt="Living room setup"
-                  fill
-                  className="object-cover"
-                />
-
-                <div className="absolute left-0 top-[5%] flex h-[55%] w-full items-end justify-center gap-3 px-4 md:gap-10">
-                  {[
-                    { size: "45x30", price: "45", scale: 0.5 },
-                    { size: "60x40", price: "55", scale: 0.67 },
-                    { size: "80x54", price: "68", scale: 0.89 },
-                    { size: "90x60", price: "75", scale: 1.0 },
-                  ].map((p, i) => (
-                    <div
-                      key={p.size}
-                      className="group flex flex-col items-center transition-transform hover:-translate-y-1"
-                      style={{
-                        width: `${p.scale * 20}%`,
-                        minWidth: "56px",
-                      }}
-                    >
-                      <div className="relative mb-2 aspect-[2/3] w-full overflow-hidden rounded-sm border-4 border-white shadow-lg">
-                        <Image
-                          src={`/pic${i + 1}${i + 1}.JPG`}
-                          alt={p.size}
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                      <div className="rounded-lg border border-border/50 bg-card/95 px-2 py-1 shadow-md backdrop-blur-sm">
-                        <p className="whitespace-nowrap text-[10px] font-medium text-foreground md:text-xs">
-                          {p.size} cm
-                        </p>
-                        <p className="text-[10px] font-bold text-primary md:text-xs">
-                          €{p.price}
-                        </p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
+            <PricingShowcase />
           </div>
         </section>
 
