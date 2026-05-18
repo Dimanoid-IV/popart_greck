@@ -41,7 +41,7 @@ export default function Footer() {
           </div>
           <div>
             <h4 className="mb-4 text-xs font-semibold uppercase tracking-wider text-foreground">
-              Quick Links
+              {t.footer.quickLinks}
             </h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
@@ -50,6 +50,14 @@ export default function Footer() {
                   className="transition-colors hover:text-primary"
                 >
                   {t.footer.blog}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#delivery"
+                  className="transition-colors hover:text-primary"
+                >
+                  {t.nav.delivery}
                 </Link>
               </li>
               <li>

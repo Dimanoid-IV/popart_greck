@@ -3,6 +3,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import OrderFlow from "@/components/OrderFlow";
+import DeliveryInfo from "@/components/DeliveryInfo";
 import Image from "next/image";
 import { Zap, Palette, Heart } from "lucide-react";
 import { useLanguage } from "@/lib/LanguageContext";
@@ -190,6 +191,8 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <DeliveryInfo />
 
         <section className="py-20 md:py-28">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">

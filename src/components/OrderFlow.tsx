@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef } from "react";
+import Link from "next/link";
 import { Upload, Check, Loader2, ArrowRight } from "lucide-react";
 import { useLanguage } from "@/lib/LanguageContext";
 import { Button } from "@/components/ui/button";
@@ -400,6 +401,15 @@ export default function OrderFlow() {
                 </Card>
                 <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
                   {t.order.checkout.notification}
+                </p>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                  {t.order.checkout.deliveryNote}{" "}
+                  <Link
+                    href="#delivery"
+                    className="font-medium text-primary hover:underline"
+                  >
+                    {t.order.checkout.deliveryLink}
+                  </Link>
                 </p>
               </div>
 

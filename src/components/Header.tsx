@@ -35,6 +35,9 @@ export default function Header() {
           <Link href="#pricing" className={navLinkClass}>
             {t.nav.pricing}
           </Link>
+          <Link href="#delivery" className={navLinkClass}>
+            {t.nav.delivery}
+          </Link>
           <Link href="#gallery" className={navLinkClass}>
             {t.nav.gallery}
           </Link>
