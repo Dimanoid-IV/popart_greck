@@ -3,6 +3,7 @@
 import { useLanguage } from "@/lib/LanguageContext";
 import Link from "next/link";
 import { SITE_NAME } from "@/lib/seo/site-config";
+import SiteLogo from "@/components/SiteLogo";
 import { Separator } from "@/components/ui/separator";
 
 export default function Footer() {
@@ -13,12 +14,7 @@ export default function Footer() {
       <div className="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-4">
           <div>
-            <div className="mb-4 flex items-center gap-2">
-              <span className="flex size-8 items-center justify-center rounded-lg bg-primary text-sm font-bold text-primary-foreground">
-                A
-              </span>
-              <span className="text-lg font-semibold">{SITE_NAME}</span>
-            </div>
+            <SiteLogo href="/" imageClassName="h-12 sm:h-14" className="mb-4" />
             <p className="text-sm leading-relaxed text-muted-foreground">
               {t.footer.desc}
             </p>

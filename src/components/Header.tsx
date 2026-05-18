@@ -3,8 +3,8 @@
 import Link from "next/link";
 import { useLanguage } from "@/lib/LanguageContext";
 import { LANGUAGE_LABELS, Language } from "@/lib/translations";
-import { SITE_NAME } from "@/lib/seo/site-config";
 import { Button } from "@/components/ui/button";
+import SiteLogo from "@/components/SiteLogo";
 import { cn } from "@/lib/utils";
 
 const navLinkClass =
@@ -16,17 +16,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/60 bg-background/85 backdrop-blur-xl supports-[backdrop-filter]:bg-background/70">
       <div className="container mx-auto flex h-16 items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
-        <Link
-          href="/"
-          className="flex shrink-0 items-center gap-2 transition-opacity hover:opacity-80"
-        >
-          <span className="flex size-8 items-center justify-center rounded-lg bg-primary text-sm font-bold text-primary-foreground">
-            A
-          </span>
-          <span className="text-lg font-semibold tracking-tight text-foreground sm:text-xl">
-            {SITE_NAME}
-          </span>
-        </Link>
+        <SiteLogo priority />
 
         <nav className="hidden items-center gap-6 md:flex">
           <Link href="#how-it-works" className={navLinkClass}>

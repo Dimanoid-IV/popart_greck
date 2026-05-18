@@ -1,4 +1,4 @@
-import { SITE_NAME, SITE_ORIGIN } from "./site-config";
+import { SITE_LOGO, SITE_NAME, SITE_ORIGIN } from "./site-config";
 
 /** Organization + LocalBusiness + WebSite (SearchAction optional). */
 export function buildRootJsonLd() {
@@ -14,9 +14,9 @@ export function buildRootJsonLd() {
         url: SITE_ORIGIN,
         logo: {
           "@type": "ImageObject",
-          url: `${SITE_ORIGIN}/og-image.jpg`,
-          width: 1200,
-          height: 630,
+          url: `${SITE_ORIGIN}${SITE_LOGO}`,
+          width: 1024,
+          height: 1024,
         },
         ...(sameAs.length ? { sameAs } : {}),
       },
@@ -82,7 +82,7 @@ export function buildArticleJsonLd(input: {
       name: SITE_NAME,
       logo: {
         "@type": "ImageObject",
-        url: `${SITE_ORIGIN}/og-image.jpg`,
+        url: `${SITE_ORIGIN}${SITE_LOGO}`,
       },
     },
     inLanguage: input.inLanguage,

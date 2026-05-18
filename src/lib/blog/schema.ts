@@ -36,7 +36,7 @@ export function buildArticleGraphLd(article: BlogArticle, slug: string) {
       url: SITE_URL,
       logo: {
         "@type": "ImageObject",
-        url: `${SITE_URL}/og-image.jpg`,
+        url: `${SITE_URL}/logg.png`,
       },
     },
     mainEntityOfPage: {

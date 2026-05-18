@@ -1,5 +1,10 @@
 import type { Metadata } from "next";
-import { LOCALE_ALTERNATES, SITE_NAME, SITE_ORIGIN } from "./site-config";
+import {
+  LOCALE_ALTERNATES,
+  SITE_LOGO,
+  SITE_NAME,
+  SITE_ORIGIN,
+} from "./site-config";
 
 const ogImage = "/og-image.jpg";
 
@@ -26,6 +31,10 @@ export const rootMetadata: Metadata = {
     "Athens",
   ],
   applicationName: SITE_NAME,
+  icons: {
+    icon: SITE_LOGO,
+    apple: SITE_LOGO,
+  },
   alternates: {
     canonical: SITE_ORIGIN,
     languages: {
