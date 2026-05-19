@@ -9,7 +9,8 @@ export async function POST(req: NextRequest) {
   });
 
   try {
-    const { size, price, email, imageUrl, shippingInfo } = await req.json();
+    const { size, price, email, imageUrl, artStyle, shippingInfo } =
+      await req.json();
 
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ['card'],
@@ -34,6 +35,7 @@ export async function POST(req: NextRequest) {
       metadata: {
         size,
         imageUrl,
+        ...(artStyle ? { artStyle: String(artStyle) } : {}),
         fullName: shippingInfo.fullName,
         address: shippingInfo.address,
         postalCode: shippingInfo.postalCode,

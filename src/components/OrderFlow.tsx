@@ -9,6 +9,11 @@ import { Card, CardContent, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Progress } from "@/components/ui/progress";
+import OrderImageCrop from "@/components/OrderImageCrop";
+import {
+  DEFAULT_ART_STYLE,
+  type ArtStyle,
+} from "@/lib/generation-styles";
 import { cn } from "@/lib/utils";
 
 const SIZES = [
@@ -18,10 +23,17 @@ const SIZES = [
   { label: "90x60 cm", price: 75 },
 ];
 
-type Step = "upload" | "size" | "processing" | "selection" | "checkout";
+type Step =
+  | "upload"
+  | "crop"
+  | "size"
+  | "processing"
+  | "selection"
+  | "checkout";
 
 const STEP_ORDER: Step[] = [
   "upload",
+  "crop",
   "size",
   "processing",
   "selection",
@@ -37,7 +49,9 @@ export default function OrderFlow() {
   const { t } = useLanguage();
   const [step, setStep] = useState<Step>("upload");
 
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [rawImage, setRawImage] = useState<string | null>(null);
+  const [croppedImage, setCroppedImage] = useState<string | null>(null);
+  const [artStyle, setArtStyle] = useState<ArtStyle>(DEFAULT_ART_STYLE);
   const [selectedSize, setSelectedSize] = useState(SIZES[0]);
   const [aiResults, setAiResults] = useState<string[]>([]);
   const [selectedResult, setSelectedResult] = useState<number | null>(null);
@@ -46,6 +60,7 @@ export default function OrderFlow() {
 
   const stepLabels = [
     t.order.steps.upload,
+    t.order.steps.crop,
     t.order.steps.size,
     t.order.steps.process,
     t.order.steps.select,
@@ -57,15 +72,17 @@ export default function OrderFlow() {
     if (file) {
       const reader = new FileReader();
       reader.onloadend = () => {
-        setSelectedImage(reader.result as string);
-        setStep("size");
+        setRawImage(reader.result as string);
+        setCroppedImage(null);
+        setStep("crop");
       };
       reader.readAsDataURL(file);
     }
   };
 
   const startProcessing = async () => {
-    if (!selectedImage) return;
+    const imageForApi = croppedImage ?? rawImage;
+    if (!imageForApi) return;
 
     setStep("processing");
     setIsProcessing(true);
@@ -74,7 +91,7 @@ export default function OrderFlow() {
       const response = await fetch("/api/generate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ image: selectedImage }),
+        body: JSON.stringify({ image: imageForApi, style: artStyle }),
       });
 
       const data = await response.json();
@@ -166,6 +183,7 @@ export default function OrderFlow() {
           price: selectedSize.price,
           email,
           imageUrl: aiResults[selectedResult],
+          artStyle,
           shippingInfo,
         }),
       });
@@ -230,6 +248,24 @@ export default function OrderFlow() {
             })}
           </div>
         </div>
+
+        {step === "crop" && rawImage && (
+          <OrderImageCrop
+            imageSrc={rawImage}
+            artStyle={artStyle}
+            onArtStyleChange={setArtStyle}
+            labels={t.order.crop}
+            onBack={() => {
+              setRawImage(null);
+              setCroppedImage(null);
+              setStep("upload");
+            }}
+            onConfirm={(cropped) => {
+              setCroppedImage(cropped);
+              setStep("size");
+            }}
+          />
+        )}
 
         {step === "upload" && (
           <div className="py-6 text-center">
@@ -296,7 +332,7 @@ export default function OrderFlow() {
               <Button
                 type="button"
                 variant="ghost"
-                onClick={() => setStep("upload")}
+                onClick={() => setStep("crop")}
               >
                 {t.order.size.back}
               </Button>
@@ -383,6 +419,16 @@ export default function OrderFlow() {
                       </span>
                       <span className="font-medium">
                         {t.order.checkout.productName}
+                      </span>
+                    </div>
+                    <div className="flex justify-between border-b border-border pb-3 text-sm">
+                      <span className="text-muted-foreground">
+                        {t.order.checkout.style}
+                      </span>
+                      <span className="font-medium">
+                        {artStyle === "dream-art"
+                          ? t.order.checkout.styleDream
+                          : t.order.checkout.styleClassic}
                       </span>
                     </div>
                     <div className="flex justify-between border-b border-border pb-3 text-sm">
