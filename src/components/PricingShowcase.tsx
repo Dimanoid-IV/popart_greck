@@ -24,7 +24,7 @@ export default function PricingShowcase() {
           sizes="(max-width: 768px) 100vw, 1024px"
         />
 
-        <div className="absolute inset-x-0 bottom-[7%] top-[10%] flex items-end justify-center gap-[1.5%] px-[2%] sm:gap-2 md:gap-8 md:px-6">
+        <div className="absolute inset-x-0 top-[3%] flex h-[50%] items-end justify-center gap-[1.5%] px-[2%] sm:gap-2 md:gap-8 md:px-6">
           {CANVAS_SIZES.map((p, i) => (
             <div
               key={p.size}
