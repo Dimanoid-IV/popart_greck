@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef } from "react";
+import ProcessingRotatingMessage from "@/components/ProcessingRotatingMessage";
 import Link from "next/link";
 import { Upload, Check, Loader2, ArrowRight, Mail, Sparkles } from "lucide-react";
 import { useLanguage } from "@/lib/LanguageContext";
@@ -350,7 +351,7 @@ export default function OrderFlow() {
             <h3 className="mb-2 text-2xl font-semibold">
               {t.order.processing.title}
             </h3>
-            <p className="text-muted-foreground">{t.order.processing.desc}</p>
+            <ProcessingRotatingMessage messages={t.order.processing.messages} />
           </div>
         )}
 

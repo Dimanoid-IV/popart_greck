@@ -76,7 +76,15 @@ export const translations = {
       },
       processing: {
         title: "Your art is being created...",
-        desc: "Creating your digital masterpieces with different artistic backgrounds.",
+        messages: [
+          "Adding beauty, pixel by pixel.",
+          "Sprinkling a little magic and a few brushstrokes.",
+          "Your photo is already in the studio — the result is coming soon.",
+          "The artist in the server frowned thoughtfully.",
+          "Choosing light, atmosphere, and a dash of wow.",
+          "Turning your shot into a small work of art.",
+          "Almost there — the last brushstrokes are landing on the canvas.",
+        ],
       },
       selection: {
         title: "Select Your Result",
@@ -206,7 +214,15 @@ export const translations = {
       },
       processing: {
         title: "Η τέχνη σας δημιουργείται...",
-        desc: "Δημιουργούμε τα ψηφιακά σας αριστουργήματα με διαφορετικά καλλιτεχνικά φόντα.",
+        messages: [
+          "Βάζουμε ομορφιά, πίξελ προς πίξελ.",
+          "Προσθέτουμε λίγη μαγεία και μερικές πινελιές.",
+          "Η φωτογραφία είναι ήδη στο ατελιέ, σύντομα θα δείξουμε το αποτέλεσμα.",
+          "Ο καλλιτέχνης μέσα στον σέρβερ συνοφρυώθηκε σκεπτικός.",
+          "Διαλέγουμε φως, ατμόσφαιρα και λίγη δόση «ουάου».",
+          "Μεταμορφώνουμε τη λήψη σε ένα μικρό έργο τέχνης.",
+          "Λίγο ακόμα: οι τελευταίες πινελιές πέφτουν ήδη στον καμβά.",
+        ],
       },
       selection: {
         title: "Επιλέξτε το αποτέλεσμά σας",
