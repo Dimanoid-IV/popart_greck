@@ -82,6 +82,12 @@ export const translations = {
         title: "Select Your Result",
         desc: "Pick the one you love the most!",
         button: "Proceed to Checkout",
+        customTitle: "None of these feel right?",
+        customDesc:
+          "Tell us your wishes directly — colors, mood, background, or likeness — and we will craft the perfect portrait for you by hand.",
+        customCta: "Email us your wishes",
+        customNote: "info@artcanvas.gr · we usually reply within one business day",
+        mailSubject: "Custom portrait request — ArtCanvas.gr",
       },
       checkout: {
         title: "Your Order Summary",
@@ -206,6 +212,12 @@ export const translations = {
         title: "Επιλέξτε το αποτέλεσμά σας",
         desc: "Διαλέξτε αυτό που σας αρέσει περισσότερο!",
         button: "Συνέχεια στην πληρωμή",
+        customTitle: "Δεν σας ικανοποιούν τα αποτελέσματα;",
+        customDesc:
+          "Γράψτε μας απευθείας τις επιθυμίες σας — χρώματα, διάθεση, φόντο ή ομοιότητα — και θα δημιουργήσουμε το ιδανικό πορτραίτο για εσάς.",
+        customCta: "Στείλτε μας τα θέλατε σας",
+        customNote: "info@artcanvas.gr · απαντάμε συνήθως εντός μίας εργάσιμης",
+        mailSubject: "Αίτημα προσαρμοσμένου πορτραίτου — ArtCanvas.gr",
       },
       checkout: {
         title: "Σύνοψη παραγγελίας",

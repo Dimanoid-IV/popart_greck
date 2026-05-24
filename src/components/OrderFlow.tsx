@@ -2,7 +2,7 @@
 
 import { useState, useRef } from "react";
 import Link from "next/link";
-import { Upload, Check, Loader2, ArrowRight } from "lucide-react";
+import { Upload, Check, Loader2, ArrowRight, Mail, Sparkles } from "lucide-react";
 import { useLanguage } from "@/lib/LanguageContext";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
@@ -46,7 +46,7 @@ function stepProgress(step: Step): number {
 }
 
 export default function OrderFlow() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const [step, setStep] = useState<Step>("upload");
 
   const [rawImage, setRawImage] = useState<string | null>(null);
@@ -390,16 +390,48 @@ export default function OrderFlow() {
                 </button>
               ))}
             </div>
-            <div className="flex justify-center">
+            <div className="mx-auto flex max-w-md flex-col items-center gap-6">
               <Button
                 type="button"
                 size="lg"
                 disabled={selectedResult === null}
                 onClick={() => setStep("checkout")}
-                className="rounded-full px-10"
+                className="w-full rounded-full px-10 sm:w-auto"
               >
                 {t.order.selection.button}
               </Button>
+
+              <div className="w-full rounded-2xl border border-dashed border-primary/25 bg-gradient-to-br from-muted/60 to-primary/5 p-6 text-center shadow-sm">
+                <div className="mx-auto mb-3 flex size-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+                  <Sparkles className="size-6" aria-hidden />
+                </div>
+                <h4 className="mb-2 text-lg font-semibold text-foreground">
+                  {t.order.selection.customTitle}
+                </h4>
+                <p className="mb-5 text-sm leading-relaxed text-muted-foreground">
+                  {t.order.selection.customDesc}
+                </p>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="w-full gap-2 border-primary/30 bg-background/80 hover:bg-background"
+                  render={
+                    <a
+                      href={`mailto:info@artcanvas.gr?subject=${encodeURIComponent(t.order.selection.mailSubject)}&body=${encodeURIComponent(
+                        language === "el"
+                          ? "Γεια σας,\n\nΔεν μου ταιριάζουν τα αυτόματα αποτελέσματα. Θα ήθελα:\n\n"
+                          : "Hello,\n\nThe auto-generated options are not quite right. I would like:\n\n"
+                      )}`}
+                    />
+                  }
+                >
+                  <Mail className="size-4" />
+                  {t.order.selection.customCta}
+                </Button>
+                <p className="mt-4 text-xs text-muted-foreground">
+                  {t.order.selection.customNote}
+                </p>
+              </div>
             </div>
           </div>
         )}
