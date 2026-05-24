@@ -11,33 +11,38 @@ const CLASSIC_BACKGROUNDS = [
 ] as const;
 
 const DREAM_ART_BACKGROUNDS = [
-  "Vibrant paint splashes in magenta, cyan and orange radiating behind the subject, a few light splashes on cheek edges, dream art style",
-  "Abstract multicolor ink splatter and dry brush strokes, subtle color flecks on hair and jawline, electric blue and gold accents",
-  "Bold acrylic drips behind the head with small paint touches on the shoulder and temple, pink, purple and teal",
-  "Luminous color clouds with soft glow, faint brush accents on the outer face contour, fantasy atmosphere, no scenery",
-  "Expressive rainbow paint swirls behind the portrait, delicate color splashes grazing the cheeks and hair",
+  "Vibrant paint splashes in magenta, cyan and orange radiating behind the subject, dream art style",
+  "Abstract multicolor ink splatter and dry brush strokes behind the head, electric blue and gold accents",
+  "Bold acrylic drips and sweeping marks behind the shoulders, pink, purple and teal",
+  "Luminous color clouds with soft glow behind the portrait, fantasy atmosphere, no scenery",
+  "Expressive rainbow paint swirls and watercolor bursts behind the subject",
 ] as const;
 
 const EYE_HIGHLIGHTS =
-  "Bright natural catchlights and glossy sparkles in both eyes, lively eye reflections, painted but luminous gaze.";
+  "Bright natural catchlights and glossy sparkles in both eyes — same eye shape and gaze direction as the reference, lively reflections with a painted finish.";
 
-/** Balance: visible painted style + same recognizable person as the upload. */
-const LIKENESS_INSTRUCTION = `The result must be the same recognizable person as in the reference photo — keep face shape, eye placement, nose, mouth, jawline, and age.
-Apply clear artistic painting on the face (visible brushstrokes, painted skin, soft volume) but do not change bone structure, swap identity, or turn into a different person.`;
+/** Highest priority: same person; stylization must follow their geometry. */
+const LIKENESS_OPENING = `PRIORITY — FACIAL LIKENESS FROM REFERENCE PHOTO:
+Image-to-image portrait of the exact same person. Family and friends must recognize them immediately.
+Preserve accurately: overall face shape, eye shape/size/spacing, nose, lips, jawline, chin, cheekbones, eyebrows, skin tone, hairline, and age.
+Painted artistic style is required, but anatomy and identity must match the upload — never a new face, never a generic model, no face swap.`;
 
-const CLASSIC_BASE_PROMPT = `${LIKENESS_INSTRUCTION}
+const LIKENESS_CLOSING = `Remember: beautiful painted artwork AND unmistakable likeness to the reference person — identity is non-negotiable.`;
+
+const CLASSIC_BASE_PROMPT = `${LIKENESS_OPENING}
 Professional digital art portrait in a beautiful painterly style.
-Artistic rendering with smooth brushstrokes on face and skin, soft volume, and elegant lighting.
+Visible brushstrokes on face and skin, soft volume, elegant lighting — stylized paint texture that follows this person's real features.
 ${EYE_HIGHLIGHTS}
-Expressive artistic eyes with painted texture, simplified clothing with painterly brushwork.
-A masterpiece of digital painting — clearly illustrated, not a plain photograph, yet instantly recognizable as the person in the source image.`;
+Painterly clothing and background. Masterpiece digital painting, clearly illustrated not a raw photo.
+${LIKENESS_CLOSING}`;
 
-const DREAM_ART_BASE_PROMPT = `${LIKENESS_INSTRUCTION}
-Professional dream art digital portrait with a painterly stylized face — smooth brushwork and expressive painted eyes, clearly artwork not a raw photo.
+const DREAM_ART_BASE_PROMPT = `${LIKENESS_OPENING}
+Professional dream art digital portrait — painterly face with smooth brushwork, clearly artwork not an unedited photo.
 ${EYE_HIGHLIGHTS}
-Dream art background: vivid paint splashes, colorful brush strokes, acrylic drips and abstract bursts in pink, magenta, cyan, orange and purple.
-Allow a few subtle paint splashes and color accents lightly on the face — cheeks, temple, hairline or jaw — but sparingly; never cover the eyes, nose, or mouth. Features stay readable and recognizable.
-Soft glow, fantasy mood, no detailed room or landscape.`;
+Bold dream art behind the subject: vivid paint splashes, brush strokes, acrylic drips in pink, magenta, cyan, orange and purple.
+A few very subtle translucent paint flecks on cheek edges, temple or hair only — never over eyes, nose or mouth; likeness always wins over effects.
+Soft glow, fantasy mood, no room scenery.
+${LIKENESS_CLOSING}`;
 
 export function pickBackgrounds(style: ArtStyle, count = 2): string[] {
   const pool =
@@ -47,6 +52,10 @@ export function pickBackgrounds(style: ArtStyle, count = 2): string[] {
 
 export function getBasePrompt(style: ArtStyle): string {
   return style === "dream-art" ? DREAM_ART_BASE_PROMPT : CLASSIC_BASE_PROMPT;
+}
+
+export function buildGenerationPrompt(style: ArtStyle, background: string): string {
+  return `${getBasePrompt(style)} Background: ${background}. Painted portrait masterpiece, high quality, maximum recognizable likeness to the uploaded person.`;
 }
 
 export function isArtStyle(value: unknown): value is ArtStyle {

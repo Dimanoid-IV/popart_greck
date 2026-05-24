@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import {
   DEFAULT_ART_STYLE,
-  getBasePrompt,
+  buildGenerationPrompt,
   isArtStyle,
   pickBackgrounds,
 } from "@/lib/generation-styles";
@@ -26,14 +26,13 @@ export async function POST(req: NextRequest) {
     }
 
     const style = isArtStyle(styleRaw) ? styleRaw : DEFAULT_ART_STYLE;
-    const basePrompt = getBasePrompt(style);
     const selectedBackgrounds = pickBackgrounds(style, 2);
 
     const baseUrl = "https://api.nanobananaapi.ai/api/v1/nanobanana";
 
     const tasks = await Promise.all(
       selectedBackgrounds.map(async (bg) => {
-        const fullPrompt = `${basePrompt} Background: ${bg}. Artistic masterpiece, high quality painted portrait, recognizable same person with visible brushwork.`;
+        const fullPrompt = buildGenerationPrompt(style, bg);
 
         let processedImage = image;
 
