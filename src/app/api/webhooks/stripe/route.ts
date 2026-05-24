@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import Stripe from 'stripe';
 import { Resend } from 'resend';
+import { getAdminOrderNotificationEmails } from '@/lib/seo/site-config';
 
 export const dynamic = 'force-dynamic';
 
@@ -37,7 +38,8 @@ export async function POST(req: NextRequest) {
     const session = event.data.object as Stripe.Checkout.Session;
     
     // Extract metadata
-    const { size, imageUrl, fullName, address, postalCode, phone } = session.metadata || {};
+    const { size, imageUrl, artStyle, fullName, address, postalCode, phone } =
+      session.metadata || {};
     const customerEmail = session.customer_details?.email || session.customer_email || '';
 
     console.log('Processing checkout.session.completed event:', {
@@ -123,12 +125,12 @@ export async function POST(req: NextRequest) {
       }
     }
 
-    // Send notification to admin
+    // Send notification to admin (ADMIN_EMAIL on Vercel + operations inbox)
     try {
-      const adminEmail = process.env.ADMIN_EMAIL || 'popartee@gmail.com';
+      const adminRecipients = getAdminOrderNotificationEmails();
       const adminEmailResult = await resend.emails.send({
         from: process.env.RESEND_FROM_EMAIL || 'onboarding@resend.dev',
-        to: adminEmail,
+        to: adminRecipients,
         subject: `New Order from ${fullName || 'Unknown Customer'}`,
         html: `
           <!DOCTYPE html>
@@ -164,6 +166,7 @@ export async function POST(req: NextRequest) {
                 <div class="order-details">
                   <h2>Order Details</h2>
                   <p><strong>Size:</strong> ${size || 'Not specified'}</p>
+                  <p><strong>Style:</strong> ${artStyle || 'Not specified'}</p>
                   <p><strong>Price:</strong> €${(session.amount_total! / 100).toFixed(2)}</p>
                   <p><strong>Order ID:</strong> ${session.id}</p>
                 </div>
