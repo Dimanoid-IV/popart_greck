@@ -18,15 +18,21 @@ const DREAM_ART_BACKGROUNDS = [
   "Expressive rainbow paint swirls and watercolor bursts behind the portrait",
 ] as const;
 
-const CLASSIC_BASE_PROMPT = `Professional digital art portrait in a beautiful painterly style.
-Artistic rendering with smooth brushstrokes, soft volume, and elegant lighting.
-Expressive artistic eyes, simplified clothing with painterly textures.
-A masterpiece of digital painting. Avoid photorealism.`;
+/** Shared identity lock for img2img — face must match the uploaded photo. */
+const LIKENESS_INSTRUCTION = `CRITICAL — preserve exact facial identity from the reference photo.
+The same person must stay instantly recognizable: keep face shape, eye shape and spacing, nose, mouth, lips, jawline, cheekbones, eyebrows, hairline, skin tone, and apparent age.
+Do not replace the face, do not change gender, ethnicity, or bone structure. No face swap, no heavy beautification, no cartoon distortion of features.
+Apply painterly style lightly on the face only; facial proportions and unique traits must remain accurate and faithful to the source image.`;
 
-const DREAM_ART_BASE_PROMPT = `Professional dream art digital portrait. Painterly face with smooth brushwork and expressive eyes.
-Keep the person clearly recognizable. Dream art background only: vivid paint splashes, colorful brush strokes,
-acrylic drips and abstract color bursts in pink, magenta, cyan, orange and purple.
-High energy fantasy art mood, soft glow, no photorealism, no detailed room or landscape.`;
+const CLASSIC_BASE_PROMPT = `${LIKENESS_INSTRUCTION}
+Professional digital portrait painting on canvas. Soft artistic brushstrokes and elegant lighting on clothing and background.
+Natural-looking eyes that match the reference photo. Painterly textures on clothes and backdrop only — not on altering facial geometry.
+High-quality portrait art with strong likeness to the uploaded person.`;
+
+const DREAM_ART_BASE_PROMPT = `${LIKENESS_INSTRUCTION}
+Professional dream art portrait. Keep the face photorealistic-to-natural and fully recognizable; apply dream art ONLY in the background behind the subject.
+Background: vivid paint splashes, colorful brush strokes, acrylic drips and abstract color bursts in pink, magenta, cyan, orange and purple.
+No paint splashes covering or reshaping the face. Soft glow around the silhouette, fantasy mood, no detailed room or landscape.`;
 
 export function pickBackgrounds(style: ArtStyle, count = 2): string[] {
   const pool =

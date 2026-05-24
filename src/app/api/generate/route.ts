@@ -33,7 +33,7 @@ export async function POST(req: NextRequest) {
 
     const tasks = await Promise.all(
       selectedBackgrounds.map(async (bg) => {
-        const fullPrompt = `${basePrompt} Background: ${bg}. Artistic, masterpiece, high quality.`;
+        const fullPrompt = `${basePrompt} Background: ${bg}. Masterpiece portrait, high quality, maximum facial likeness to reference photo, recognizable same person.`;
 
         let processedImage = image;
 
