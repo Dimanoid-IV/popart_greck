@@ -15,6 +15,7 @@ import {
   DEFAULT_ART_STYLE,
   type ArtStyle,
 } from "@/lib/generation-styles";
+import { ORDER_INQUIRY_EMAIL } from "@/lib/seo/site-config";
 import { cn } from "@/lib/utils";
 
 const SIZES = [
@@ -418,7 +419,7 @@ export default function OrderFlow() {
                   className="w-full gap-2 border-primary/30 bg-background/80 hover:bg-background"
                   render={
                     <a
-                      href={`mailto:info@artcanvas.gr?subject=${encodeURIComponent(t.order.selection.mailSubject)}&body=${encodeURIComponent(
+                      href={`mailto:${ORDER_INQUIRY_EMAIL}?subject=${encodeURIComponent(t.order.selection.mailSubject)}&body=${encodeURIComponent(
                         language === "el"
                           ? "Γεια σας,\n\nΔεν μου ταιριάζουν τα αυτόματα αποτελέσματα. Θα ήθελα:\n\n"
                           : "Hello,\n\nThe auto-generated options are not quite right. I would like:\n\n"
